@@ -242,7 +242,7 @@ a {
     align-items: center;
     background-color: #ffffff;
     color: #fff;
-    margin: 3rem 2rem;
+    margin: 3em 2em;
     padding: 10px 20px;
     justify-content: space-between;
     border-radius: 12px;
@@ -252,6 +252,7 @@ a {
 .LanguageAndAccountContainer{
         display: flex;
         width: 33%;
+        position: relative;
 }
 
 .search-container {
@@ -311,7 +312,7 @@ a {
 
 
 .notification {
-    margin: 0 6rem 0px 2.5rem;
+    margin: 0 6em 0px 2.5em;
     cursor: pointer;
 }
 
@@ -337,20 +338,17 @@ a {
 
 .account-menu {
     display: none;
-    position: absolute; 
-    top: 119%; 
+    position: absolute;
+    top: 128%;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    border-radius: 7px;
+    width: 112%;
+    border-radius: 12px;
 }
 
-.account-dropdown:hover .account-menu {
-    display: block;
-}
 
 .account-menu ul {
-    list-style: none;
+    /* list-style: none; */
     padding: 3px;
 }
 
@@ -368,5 +366,61 @@ a {
     background-color: #eee;
 }
 
+
+/*Notıfıcatıon box*/
+
+#NotificationButton{
+    border: none;
+    background-color: #ffffff;
+    margin: 0 .65em;
+}
+.notificationContiner {
+    background-color: #ffd5049f !important;
+    width: fit-content;
+    padding: 1rem .5rem;
+    line-height: 1.5;
+    border-radius: 27px 0 27px 27px;
+    position: absolute;
+    top: 72%;
+    right: 67%;
+    display: none;
+}
+
+.notifications {
+    width: 15em;
+    height: 20em;
+    padding: 0 1em;
+    overflow-y: scroll;
+}
+
+.notification::-webkit-scrollbar {
+    width: 8px;
+    border-radius: 27px;
+}
+
+.notification::-webkit-scrollbar-thumb {
+    background: #585858;
+    border-radius: 27px;
+}
+
+.notification::-webkit-scrollbar-thumb:hover {
+    background: #585858;
+}
+
+.notification1,
+.notification2,
+.notification3 {
+    background-color: #F7F7F7;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 27px;
+    height: fit-content;
+}
+
+.notification1 p,
+.notification2 p,
+.notification3 p {
+    margin: 1rem 0 0 0;
+}
 
 
