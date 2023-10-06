@@ -7,6 +7,35 @@
     <title>Document</title>
     <link rel="stylesheet" href="/CSS/style.css">
     <link rel="stylesheet" href="/CSS/Dashboard.css">
+
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Year', 'Sales', 'Expenses'],
+          ['2013',  1000,      400],
+          ['2014',  1170,      460],
+          ['2015',  660,       1120],
+          ['2016',  1030,      540]
+        ]);
+
+        var options = {
+          title: 'Company Performance',
+          hAxis: {title: 'Year',  titleTextStyle: {color: '#333'}},
+          vAxis: {minValue: 0}
+        };
+
+        var chart = new google.visualization.AreaChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+      }
+    </script>
+
+
+
 </head>
 
 <body>
@@ -182,7 +211,7 @@
                                             <th onclick="sortTable(3, 'date')" data-sort-type="date" data-sort-direction="asc">Date
                                                 <img class="sort" src="/Images/icons/DownArrow.png" alt="" height="8px">
                                             </th>
-                                            <th class="center">Upload</th>
+                                            <th class="center">View</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -239,7 +268,14 @@
                     </div>
                 </div>
                 <div class="rightContainer">
+                    <div class="AreaChart">
 
+                        <div id="chart_div" ></div>
+
+                    </div>
+                    <div class="Reviews-Div">
+                        
+                    </div>
                 </div>
             </div>
         </div>
@@ -248,6 +284,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="/JS/common.js"></script>
     <script src="/JS/Dashboard.js"></script>
+
 
 </body>
 
