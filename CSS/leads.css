@@ -1,0 +1,406 @@
+/* Customize the scrollbar track */
+::-webkit-scrollbar {
+  width: 5px;
+  /* Set the width of the scrollbar */
+  height: 2rem;
+}
+
+/* Customize the scrollbar thumb (the draggable part) */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  /* Set the color of the scrollbar thumb */
+  border-radius: 5px;
+  /* Add rounded corners to the thumb */
+  height: 2rem;
+}
+
+/* Customize the scrollbar track when it's hovered over */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Customize the scrollbar track (background) */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  /* Set the color of the scrollbar track */
+}
+
+/* Customize the scrollbar corner (where two scrollbars meet) */
+::-webkit-scrollbar-corner {
+  background: #fff;
+  /* Set the color of the scrollbar corner */
+}
+
+/* Customize the scrollbar track */
+
+.content{
+  z-index: 1;
+}
+
+.leads-container {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(300px, 500px));
+  grid-gap: .5rem;
+  margin: 0 2rem 0 2rem;
+  height: 100vh;
+  height: 60%;
+}
+
+
+.label-container {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+  background-color: #685fe7;
+  /* width: 100%; */
+  height: 3rem;
+  align-items: center;
+  border-radius: 27px;
+  position: sticky;
+  top: 0;
+}
+
+
+.new-leads-container,
+.communication-container,
+.un-intrested-container,
+.intressted-container,
+.set-meeting-container {
+  overflow-y: auto;
+  background-color: #dddddd8c;
+  border-radius: 27px;
+}
+
+.new-lead {
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 10px;
+  margin: 1rem;
+  box-shadow: var(--shadow);
+}
+
+.new-lead:hover {
+  cursor: pointer;
+  box-shadow: var(--shadow-hover);
+}
+
+
+
+.create-search-container p {
+  margin: 0 4rem 0 0;
+  font-size: 35px;
+  font-weight: 500;
+}
+
+
+.create-search-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem 2rem;
+}
+
+.search-box {
+  background-color: #ffffff;
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0 1rem 1rem;
+  border-radius: 7px;
+  box-shadow: var(--shadow);
+}
+
+.search-box input {
+  width: 100%;
+  padding: 0.5rem;
+  /* border-radius: 10px; */
+  border: none;
+  outline: none;
+  /* box-shadow: var(--shadow); */
+  margin: 0 0 0 1rem;
+  font-size: 20px;
+
+}
+
+#create-lead-button {
+  background-color: #c8943b;
+  padding: 1rem 2rem;
+  margin: 0 0 0 4rem;
+  border: none;
+  outline: none;
+  box-shadow: var(--shadow);
+  border-radius: 7px;
+}
+
+.search-box button {
+  background-color: #ffffff;
+  color: #030703;
+  padding: .5rem 1rem;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+}
+
+.div-create-container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+/* .lead-type-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem;
+}
+.lead-type-buttons-container{
+  background-color: #86b7ee;
+  border-radius: 17px;
+  padding: 0 1rem;  
+}
+.lead-type-container button{
+  background-color: #ffffff;
+  padding: 1.5rem 4rem;
+  border: none;
+  outline: none;
+  box-shadow: var(--shadow);
+  border-radius: 27px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+} */
+
+
+
+
+
+
+.lead-type-buttons-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 2rem 0;
+}
+
+.lead-type-buttons {
+  display: flex;
+  position: relative;
+  background-color: #fff;
+  box-shadow: var(--shadow);
+  padding: 0.75rem;
+  border-radius: 99px;
+}
+
+.lead-type-buttons * {
+  z-index: 2;
+}
+
+input[type=radio] {
+  display: none;
+}
+
+.tab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 37px;
+  width: 200px;
+  font-size: 1.25rem;
+  font-weight: 500;
+  border-radius: 99px;
+  cursor: pointer;
+  transition: color 0.15s ease-in;
+}
+
+input[type=radio]:checked+label {
+  color: #292929;
+}
+
+
+
+input[id=radio-1]:checked~.glider {
+  transform: translateX(0);
+}
+
+input[id=radio-2]:checked~.glider {
+  transform: translateX(100%);
+}
+
+input[id=radio-3]:checked~.glider {
+  transform: translateX(200%);
+}
+
+.glider {
+  position: absolute;
+  display: flex;
+  height: 37px;
+  width: 200px;
+  background-color: #cd95446e;
+  z-index: 1;
+  border-radius: 99px;
+  transition: 0.25s ease-out;
+}
+
+@media (max-width: 700px) {
+  .lead-type-buttons {
+    transform: scale(0.6);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* styles.css */
+/* styles.css */
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  /* Changed from 'left' to 'right' */
+  width: 0;
+  height: 100%;
+  background: #292929cc;
+  overflow: hidden;
+  transition: 0.5s;
+  z-index: 99;
+}
+
+.popup-content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  /* Changed from 'left' to 'right' */
+  width: 0;
+  height: 100%;
+  background: #fff;
+  transition: 0.5s;
+}
+
+.close-button {
+  margin: 1rem;
+  cursor: pointer;
+}
+
+#new-lead-p {
+  margin: 3rem;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+#choose-type {
+  margin: 9rem;
+  font-size: 51px;
+  font-weight: 500;
+}
+
+.choose-type-div {
+  display: flex;
+  justify-content: center;
+}
+
+
+.public-trip-inputs-container{
+  overflow-y: scroll;
+}
+
+
+/* Style the public-trip-inputs-container */
+.public-trip-inputs-container {
+  padding: 20px;
+ 
+  border-radius: 5px;
+  margin: 10px;
+}
+
+/* Style the form elements within the container */
+.public-trip-inputs-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.public-trip-inputs-container label {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.public-trip-inputs-container input[type="text"],
+.public-trip-inputs-container input[type="email"],
+.public-trip-inputs-container input[type="password"],
+.public-trip-inputs-container input[type="number"],
+.public-trip-inputs-container textarea,
+.public-trip-inputs-container select {
+  width: 100%;
+  padding: 5px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.public-trip-inputs-container input[type="radio"],
+.public-trip-inputs-container input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+/* Style the subscribe checkbox label */
+.public-trip-inputs-container label[for="subscribe"] {
+  display: inline-block;
+  margin-top: 5px;
+}
+
+/* Style the submit button if needed */
+.public-trip-inputs-container input[type="submit"] {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* Style the select dropdown */
+.public-trip-inputs-container select {
+  height: 30px;
+}
+
+
+@media screen and (max-width: 1101px) {
+  .leads-container{
+    overflow-x: auto;
+  }
+
+}

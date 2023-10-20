@@ -1,67 +1,80 @@
-.conentContainer{
-    display: grid;
-    grid-template-columns: 1.5fr 1fr;
-    margin: 2rem;
+:root {
+  --shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.25);
 }
-.leftContainer{
-    /* background-color: aqua; */
-    border-radius: 12px;
-    margin: 0 1rem 0 0;
+
+.conentContainer {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  margin: 2rem;
 }
-.rightContainer{
-   display: flex;
-    flex-direction: column;
-    
+
+.leftContainer {
+  /* background-color: aqua; */
+  border-radius: 12px;
+  margin: 0 1rem 0 0;
 }
-.boxesContainer{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 1rem;
+
+.rightContainer {
+  display: flex;
+  flex-direction: column;
+
 }
-.carContainer{
-    display: flex;
-    background-color: #fff;
-    box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.25);
-    border-radius: 12px;
-    padding: 15px;
-    align-items: center;
-    justify-content: space-between;
+
+.boxesContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /*     grid-template-columns: repeat(auto-fill, 296.5px);
+ */
+  grid-gap: 1rem;
 }
-.textContainer{
-    font-size: 27px;
-    font-weight: 600;
+
+.carContainer {
+  display: flex;
+  background-color: #fff;
+  box-shadow: var(--shadow);
+  border-radius: 12px;
+  padding: 15px;
+  align-items: center;
+  justify-content: space-between;
 }
-.textContainer p{
-    margin: 0 0 2rem 0;
+
+.textContainer {
+  font-size: 27px;
+  font-weight: 600;
+}
+
+.textContainer p {
+  margin: 0 0 2rem 0;
 }
 
 /* table */
-.back
-{ 
-    width: 150px;
-    height: 50px;
-    background-color: #ffd504;
-    top: 80px;
-    left: 340px;
-    border-radius: 27px;
+.back {
+  width: 150px;
+  height: 50px;
+  background-color: #ffd504;
+  top: 80px;
+  left: 340px;
+  border-radius: 27px;
 }
-.back h4 
-{
-    color: white;
-    top: 15px;
-    left: 30px;
-    font-family: inter;
-    font-size:larger;
+
+.back h4 {
+  color: white;
+  top: 15px;
+  left: 30px;
+  font-family: inter;
+  font-size: larger;
 
 }
-.table-container
-{
-    height: 450px;
-    background-color: white;
-    box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.25);    border-radius: 27px;
-    margin: 2rem 0 0 0;
-    padding: 1rem;
+
+.table-container {
+  height: 450px;
+  background-color: white;
+  box-shadow: var(--shadow);
+  border-radius: 27px;
+  margin: 2rem 0 0 0;
+  padding: 1rem;
 }
+
 .DataTable {
   width: 100%;
   background-color: #fff;
@@ -96,8 +109,9 @@ th {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-td{
-  max-width: 100px  !important;
+
+td {
+  max-width: 100px !important;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -106,14 +120,14 @@ td{
 .sort {
   margin-left: 5px;
 }
-.table-container h3
-{
-    font-family: inter;
-    font-style: normal;
-    font-size: 25px;
-    color: #585858;
-    top: 40px;
-    left: 65px;
+
+.table-container h3 {
+  font-family: inter;
+  font-style: normal;
+  font-size: 25px;
+  color: #585858;
+  top: 40px;
+  left: 65px;
 
 }
 
@@ -148,30 +162,93 @@ td{
 
 }
 
-#back-left{
+#back-left {
   background: transparent;
   border: none;
   color: transparent;
 }
+
 .widgetHeader {
-    display: flex;
-    justify-content: space-between;
-    margin: 1rem 0 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0 1rem 0;
 }
 
 
-#chart_div{
+#chart_div {
   width: 100%;
-   height: 22rem;
-   margin: 0 0 2rem 0;
+  height: 22rem;
+  margin: 0 0 2rem 0;
 }
-#chart_div svg{
+
+#chart_div svg {
   border-radius: 27px;
-  box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: var(--shadow);
 }
-.Reviews-Div{
+
+.Reviews-Div {
   height: 100%;
   background-color: aqua;
   border-radius: 27px;
-  box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: var(--shadow);
+}
+
+.Reviews {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.progress-div {
+  height: 100%;
+  background-color: #fff;
+  border-radius: 27px;
+  box-shadow: var(--shadow);
+  padding: 1rem;
+  margin: 2rem 0 0 0;
+  display: flex;
+  align-items: center;
+
+}
+
+
+.chart {
+  position: relative;
+  width: 165px;
+  height: 165px;
+  margin: 0 auto;
+  font-family: 'Titillium web';
+  font-weight: 300;
+  margin: 0 3rem 0 3rem;
+
+
+}
+
+canvas {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.chart span {
+  color: #555;
+  display: block;
+  line-height: 165px;
+  text-align: center;
+  width: 165px;
+  font-size: 40px;
+  font-weight: 300;
+  margin-left: 5px;
+}
+
+
+
+
+.Reviews p {
+  font-size: 20px;
+}
+
+.Reviews a {
+  margin: 1rem 0 0 0;
 }

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="/CSS/account.css">
+</head>
+
+<body>
+
+
+
+    <section class="container">
+        <div class="sidebar-button-container">
+            <button class="show-sidebar-button">
+                <img src="/Images/icons/Menu-icon.png" alt="" height="35px">
+            </button>
+            <div class="sidebar">
+
+
+                <div class="logo">
+                    <a href="Dashboard.html">
+                        <img src="/Images/icons/Logo.png" alt="">
+                    </a>
+                </div>
+                <div class="account-dropdown mobile-sidebar account-dropdown-mobile">
+                    <img src="/Images/icons/User-Icon.png" alt="Profile Picture">
+                    <span id="username">John Deo </span>
+                    <img id="DownArrow-username" src="/Images/icons/DownArrow.png" alt="" height="15px">
+
+                </div>
+                <div class="search-container mobile-sidebar">
+                    <button type="submit">
+                        <img src="/Images/icons/Search-icon.png" alt="Search">
+                    </button>
+                    <input type="text" placeholder="Search...">
+                </div>
+                <div class="icons">
+                    <div class="dashboard">
+                        <a href="Dashboard.html">
+                            <img src="/Images/icons/Dashboard-icon.png" alt="" height="35px">
+                            <p>Dashboard</p>
+                        </a>
+                    </div>
+
+                    <div class="Leads">
+                        <a href="">
+                            <img src="/Images/icons/Leads-icon.png" alt="" height="35px">
+                            <p>Leads</p>
+                        </a>
+                    </div>
+                    <div class="Tasks">
+                        <a href="">
+                            <img src="/Images/icons/Tasks-icon.png" alt="" height="35px">
+                            <p>Tasks</p>
+                        </a>
+                    </div>
+                    <div class="guide">
+                        <a href="">
+                            <img src="/Images/icons/Guide-icon.png" alt="" height="35px">
+                            <p>Guide</p>
+                        </a>
+                    </div>
+                    <div class="notification notification-mobile mobile-sidebar">
+                        <a href="#">
+                            <img src="/Images/icons/Notification-icon.png" alt="" height="35px">
+                            <p>Notification</p>
+                        </a>
+
+
+                    </div>
+                    <div class="language-dropdown mobile-sidebar language-dropdown-mobile">
+                        <img class="FlagContainer" src="/Images/icons/britainFlag.png" alt="" height="30px">
+                        <select id="language-select">
+                            <option value="en">EN</option>
+                            <option value="AR">AR</option>
+                        </select>
+                    </div>
+
+
+                    <div class="logout-support">
+                        <div class="logout">
+                            <a href="Login.html">
+                                <img src="/Images/icons/Logout-icon.png" alt="" height="27px">
+                                <p>Logout</p>
+                            </a>
+                        </div>
+                        <div class="support">
+                            <a href="Support.html">
+                                <img src="/Images/icons/Support-icon.png" alt="">
+                                <p>Support</p>
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <!-- sidebar -->
+
+
+        <div class="content">
+            <div class="header-box">
+                <div class="search-container">
+                    <button type="submit">
+                        <img src="/Images/icons/Search-icon.png" alt="Search">
+                    </button>
+                    <input type="text" placeholder="Search...">
+                </div>
+                <div class="LanguageAndAccountContainer">
+                    <div class="language-dropdown">
+                        <img class="FlagContainer" src="/Images/icons/britainFlag.png" alt="" height="30px">
+                        <select id="language-select">
+                            <option value="en">EN</option>
+                            <option value="AR">AR</option>
+                        </select>
+                    </div>
+                    <div class="notification">
+                        <button id="NotificationButton"><img src="/Images/icons/Notification-icon.png" alt=""
+                                height="35px"></button>
+                        <div class="notificationContiner">
+                            <div class="notifications">
+                                <div class="notification1">
+                                    <span>Notification #1</span>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and </p>
+                                </div>
+                                <div class="notification2">
+                                    <span>Notification #2</span>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and Lorem Ipsum is simply dummy
+                                        text of the printing andLorem Ipsum is simply dummy text of the printing
+                                        andLorem Ipsum is simply dummy text of the printing andLorem Ipsum is simply
+                                        dummy text of the printing and </p>
+
+                                </div>
+                                <div class="notification3">
+                                    <span>Notification #3</span>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="account-dropdown">
+                        <img src="/Images/icons/User-Icon.png" alt="Profile Picture">
+                        <span id="username">John Deo </span>
+                        <img src="/Images/icons/DownArrow.png" alt="" height="15px">
+                        <div class="account-menu">
+                            <ul>
+                                <li><a href="#">Profile</a></li>
+                                <li><a href="#">Settings</a></li>
+                                <li><a href="#">Logout</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--         add the content here  -->
+            <section class="Account-Content">
+
+
+                <div class="Account-Links">
+                    <a id="selected" href="Account.html"> My profile</a>
+                    <a href="change-password.html">Password</a></li>
+                </div>
+
+                <div id="line"></div>
+
+
+                <div class="right-side-panel">
+
+                    <div class="MyProfile">
+                        <h3>My Profile</h3>
+
+                    </div>
+                    <div class="PersonalInforamtion">
+                        <div class="PersonalInforamtion-button">
+                            <p>Personal Information</p>
+                            <button class="edit-button">Edit <img src="/Images/icons/Edit.png" alt=""
+                                    width="20px"></button>
+                        </div>
+                        <form action="#">
+                            <div class="EmailAddress2">
+                                <span>Email Address 2</span>
+                                <p class="email">email@gmail.com</p>
+                            </div>
+                            <div class="PhoneNumber">
+                                <span>Phone Number</span>
+                                <p class="phone">+90 539 989 21 03</p>
+                                <div class="sendButton">
+                                    <button id="saveButton">save</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="Adress">
+                        <div class="PersonalInforamtion-button">
+                            <p>Full Name</p>
+                            <button class="edit-button2">Edit <img src="/Images/icons/Edit.png" alt=""></button>
+                        </div>
+
+                        <div class="AddressDistrict">
+                            <form action="#">
+                                <div class="textboxAndPinDiv">
+                                    <span>first Name</span>
+                                    <p class="district">Mohammed</p>
+                                </div>
+                                <div class="textboxAndPinDiv">
+                                    <span>Last Name</span>
+                                    <p class="city">Alazaar</p>
+                                </div>
+                                <div class="sendButton2">
+                                    <button id="saveButton2">Save</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="/JS/common.js"></script>
+    <script src="/JS/account.js"></script>
+
+</body>
+
+</html>

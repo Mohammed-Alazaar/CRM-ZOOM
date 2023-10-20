@@ -9,7 +9,14 @@
 </head>
 
 <body>
+
+    
+
     <section class="container">
+        <div class="sidebar-button-container">
+        <button class="show-sidebar-button">
+            <img src="/Images/icons/Menu-icon.png" alt="" height="35px">
+        </button>
         <div class="sidebar">
 
 
@@ -17,6 +24,18 @@
                 <a href="Dashboard.html">
                     <img src="/Images/icons/Logo.png" alt="">
                 </a>
+            </div>
+            <div class="account-dropdown mobile-sidebar account-dropdown-mobile">
+                <img src="/Images/icons/User-Icon.png" alt="Profile Picture">
+                <span id="username">John Deo </span>
+                <img id="DownArrow-username" src="/Images/icons/DownArrow.png" alt="" height="15px">
+           
+            </div>
+            <div class="search-container mobile-sidebar">
+                <button type="submit">
+                    <img src="/Images/icons/Search-icon.png" alt="Search">
+                </button>
+                <input type="text" placeholder="Search...">
             </div>
             <div class="icons">
                 <div class="dashboard">
@@ -44,6 +63,39 @@
                         <p>Guide</p>
                     </a>
                 </div>
+                <div class="notification notification-mobile mobile-sidebar">
+                    <a href="#" >
+                        <img src="/Images/icons/Notification-icon.png" alt="" height="35px">
+                        <p>Notification</p>
+                    </a>
+                    
+                 <!--    <div class="notificationContiner">
+                        <div class="notifications">
+                            <div class="notification1">
+                                <span>Notification #1</span>
+                                <p>Lorem Ipsum is simply dummy text of the printing and </p>
+                            </div>
+                            <div class="notification2">
+                                <span>Notification #2</span>
+                                <p>Lorem Ipsum is simply dummy text of the printing and Lorem Ipsum is simply dummy text of the printing andLorem Ipsum is simply dummy text of the printing andLorem Ipsum is simply dummy text of the printing andLorem Ipsum is simply dummy text of the printing and </p>
+
+                            </div>
+                            <div class="notification3">
+                                <span>Notification #3</span>
+                                <p>Lorem Ipsum is simply dummy text of the printing and </p>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+                    <div class="language-dropdown mobile-sidebar language-dropdown-mobile">
+                        <img class="FlagContainer" src="/Images/icons/britainFlag.png" alt="" height="30px">
+                        <select id="language-select">
+                            <option value="en">EN</option>
+                            <option value="AR">AR</option>
+                        </select>
+                    </div>
+                    
+             
                 <div class="logout-support">
                     <div class="logout">
                         <a href="Login.html">
@@ -61,7 +113,9 @@
                 </div>
 
             </div>
+            
         </div>
+    </div>
         <!-- sidebar -->
 
 
@@ -116,9 +170,10 @@
                     </div>
                 </div>
             </div>
+            <!--         add the content here  --> 
         </div>
-<!--         add the content here
- -->    </section>
+
+</section>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="/JS/common.js"></script>
 

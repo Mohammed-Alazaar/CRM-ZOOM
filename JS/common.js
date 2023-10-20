@@ -50,3 +50,8 @@ $(document).ready(function () {
     });
 });
   
+
+$('.show-sidebar-button').click(function() {
+    $('.sidebar').toggle();
+});
+

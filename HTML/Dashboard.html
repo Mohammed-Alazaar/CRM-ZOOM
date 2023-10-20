@@ -11,27 +11,27 @@
 
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">
-      google.charts.load('current', {'packages':['corechart']});
-      google.charts.setOnLoadCallback(drawChart);
+        google.charts.load('current', { 'packages': ['corechart'] });
+        google.charts.setOnLoadCallback(drawChart);
 
-      function drawChart() {
-        var data = google.visualization.arrayToDataTable([
-          ['Year', 'Sales', 'Expenses'],
-          ['2013',  1000,      400],
-          ['2014',  1170,      460],
-          ['2015',  660,       1120],
-          ['2016',  1030,      540]
-        ]);
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['Year', 'Sales', 'Expenses'],
+                ['2013', 1000, 400],
+                ['2014', 1170, 460],
+                ['2015', 660, 1120],
+                ['2016', 1030, 540]
+            ]);
 
-        var options = {
-          title: 'Company Performance',
-          hAxis: {title: 'Year',  titleTextStyle: {color: '#333'}},
-          vAxis: {minValue: 0}
-        };
+            var options = {
+                title: 'Company Performance',
+                hAxis: { title: 'Year', titleTextStyle: { color: '#333' } },
+                vAxis: { minValue: 0 }
+            };
 
-        var chart = new google.visualization.AreaChart(document.getElementById('chart_div'));
-        chart.draw(data, options);
-      }
+            var chart = new google.visualization.AreaChart(document.getElementById('chart_div'));
+            chart.draw(data, options);
+        }
     </script>
 
 
@@ -155,33 +155,41 @@
             <div class="conentContainer">
                 <div class="leftContainer">
                     <div class="boxesContainer">
-                        <div class="carContainer">
-                            <div class="textContainer">
-                                <p>Car</p>
-                                <span>2</span>
-                            </div>
-                            <div class="imgContainer">
-                                <img src="/Images/icons/Car-Icon.png" alt="">
-                            </div>
+
+                        <div class="carContainerDiv">
+                            <a href="Car-Management.html"  class="carContainer">
+                                <div class="textContainer">
+                                    <p>Car</p>
+                                    <span>2</span>
+                                </div>
+                                <div class="imgContainer">
+                                    <img src="/Images/icons/Car-Icon.png" alt="">
+                                </div>
+                            </a>
                         </div>
-                        <div class="carContainer">
-                            <div class="textContainer">
-                                <p>Car</p>
-                                <span>2</span>
-                            </div>
-                            <div class="imgContainer">
-                                <img src="/Images/icons/Car-Icon.png" alt="">
-                            </div>
+                        <div class="carContainerDiv">
+                            <a href="Car-Management.html"  class="carContainer">
+                                <div class="textContainer">
+                                    <p>Car</p>
+                                    <span>2</span>
+                                </div>
+                                <div class="imgContainer">
+                                    <img src="/Images/icons/Car-Icon.png" alt="">
+                                </div>
+                            </a>
                         </div>
-                        <div class="carContainer">
-                            <div class="textContainer">
-                                <p>Car</p>
-                                <span>2</span>
-                            </div>
-                            <div class="imgContainer">
-                                <img src="/Images/icons/Car-Icon.png" alt="">
-                            </div>
+                        <div class="carContainerDiv">
+                            <a href="Car-Management.html"  class="carContainer">
+                                <div class="textContainer">
+                                    <p>Car</p>
+                                    <span>2</span>
+                                </div>
+                                <div class="imgContainer">
+                                    <img src="/Images/icons/Car-Icon.png" alt="">
+                                </div>
+                            </a>
                         </div>
+               
                     </div>
                     <div class="newestLeads">
                         <div class="table-container">
@@ -199,16 +207,20 @@
                                 <table id="studentTable">
                                     <thead>
                                         <tr>
-                                            <th onclick="sortTable(0, 'text')" data-sort-type="text" data-sort-direction="asc">Student Name
+                                            <th onclick="sortTable(0, 'text')" data-sort-type="text"
+                                                data-sort-direction="asc">Student Name
                                                 <img class="sort" src="/Images/icons/DownArrow.png" alt="" height="8px">
                                             </th>
-                                            <th onclick="sortTable(1, 'text')" data-sort-type="text" data-sort-direction="asc">Student ID
+                                            <th onclick="sortTable(1, 'text')" data-sort-type="text"
+                                                data-sort-direction="asc">Student ID
                                                 <img class="sort" src="/Images/icons/DownArrow.png" alt="" height="8px">
                                             </th>
-                                            <th onclick="sortTable(2, 'text')" data-sort-type="text" data-sort-direction="asc">State
+                                            <th onclick="sortTable(2, 'text')" data-sort-type="text"
+                                                data-sort-direction="asc">State
                                                 <img class="sort" src="/Images/icons/DownArrow.png" alt="" height="8px">
                                             </th>
-                                            <th onclick="sortTable(3, 'date')" data-sort-type="date" data-sort-direction="asc">Date
+                                            <th onclick="sortTable(3, 'date')" data-sort-type="date"
+                                                data-sort-direction="asc">Date
                                                 <img class="sort" src="/Images/icons/DownArrow.png" alt="" height="8px">
                                             </th>
                                             <th class="center">View</th>
@@ -270,15 +282,18 @@
                 <div class="rightContainer">
                     <div class="AreaChart">
 
-                        <div id="chart_div" ></div>
+                        <div id="chart_div"></div>
 
                     </div>
-                    <div class="Reviews-Div">
-                        
+                    <div class="progress-div">
+                        <div class="chart" id="graph1" data-percent="70" data-color="#30bae7">
+                        </div>
+                        <div class="Reviews">
+                            <p>Tatal Reviews: <span>250</span></p>
+                            <a href="#">See Details &#8594;</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
 
     </section>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
