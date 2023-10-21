@@ -479,6 +479,13 @@ body{
 }
 
 @media screen and (max-width: 1101px) {
+    .mobilesidebar-headerbox{
+        display: flex;
+        justify-content: space-between;
+    }
+    .header-box{
+        width: 100%;
+    }
     .sidebar {
         display: none;
         position: absolute;
@@ -491,12 +498,13 @@ body{
         height: auto;
     }
     .container {
-        display: flex;
+        display: block;
         width: 100vw;
         height: auto;
     }
     .sidebar-button-container{
-        position: fixed;
+        position: sticky;
+        z-index: 50;
     }
 
     .show-sidebar-button {

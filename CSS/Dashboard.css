@@ -242,13 +242,42 @@ canvas {
   margin-left: 5px;
 }
 
-
-
-
 .Reviews p {
   font-size: 20px;
 }
 
 .Reviews a {
   margin: 1rem 0 0 0;
+}
+
+.Reviews a:hover {
+  text-decoration: underline;
+}
+
+
+
+@media screen and (max-width: 840px) {
+  .newestLeads{
+    display: none;
+  }
+  .conentContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+  }
+  .boxesContainer{
+    grid-template-columns: 1fr ;
+
+  }
+  .chart{
+    margin: 0 1rem 0 1rem;
+  }
+  #chart_div{
+    margin: 2rem 0 2rem 0;
+
+  }
+  #chart_div svg{
+    width: 225px;
+    height: 225px;
+  }
 }
