@@ -143,13 +143,18 @@ a {
 
 /*----------------------reset code-----------------*/
 
-
+* {
+  box-sizing: border-box; /* Apply box-sizing to all elements */
+}
 
 body{
     background-color: #fff8eb;  
+    box-sizing: border-box;
 }
 
-
+/* .mobilesidebar-headerbox{
+    padding: 2rem 0 0 0 ;
+} */
 
 :root {
     --shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.25);
@@ -174,11 +179,13 @@ body{
     background: #FFF8EA;
     box-shadow: inset 1em 0em 17px -13px #888;
     height: 100vh;
-    overflow-y: hidden;
     width: 100%;
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    box-sizing: border-box;
+    flex: 1;
+    overflow: hidden;
 }
 
 
@@ -283,6 +290,7 @@ body{
     justify-content: space-between;
     border-radius: 12px;
     box-shadow: var(--shadow);
+    box-sizing: border-box;
 }
 
 .LanguageAndAccountContainer {
@@ -484,10 +492,13 @@ body{
 @media screen and (max-width: 1101px) {
     .mobilesidebar-headerbox{
         display: flex;
+        align-items: center;
         justify-content: space-between;
+        margin: 2rem 0 0 0;
     }
     .header-box{
         width: 100%;
+        margin: 0;
     }
     .sidebar {
         display: none;
@@ -511,12 +522,12 @@ body{
     }
 
     .show-sidebar-button {
-        display: flex;
-        height: 4%;
-        background-color: #fff8eb;
+        display: block;
+        background: none;
         border: none;
-        margin: 4rem 0 0 0.3rem;
+        margin: 0rem 0 0 0.3rem;
         position: sticky;
+
     }
     .content{
         box-shadow: none;

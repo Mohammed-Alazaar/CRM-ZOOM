@@ -32,6 +32,9 @@
 }
 
 /* Customize the scrollbar track */
+* {
+  box-sizing: border-box; /* Apply box-sizing to all elements */
+}
 
 .content{
   z-index: 1;
@@ -43,7 +46,9 @@
   grid-gap: .5rem;
   margin: 0 2rem 0 2rem;
   height: 100vh;
-  height: 55%;
+  max-height: 60%;
+  min-height: 30%;
+  margin: 0 0 1rem 0;
 }
 
 
@@ -244,6 +249,8 @@ input[id=radio-3]:checked~.glider {
   border-radius: 99px;
   transition: 0.25s ease-out;
 }
+
+
 
 @media (max-width: 700px) {
   .lead-type-buttons {
