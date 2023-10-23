@@ -50,8 +50,12 @@ $(document).ready(function () {
     });
 });
   
-
+//showing sidebar on click
 $('.show-sidebar-button').click(function() {
+    $('.sidebar').toggle();
+});
+
+$('.close-button').click(function() {
     $('.sidebar').toggle();
 });
 

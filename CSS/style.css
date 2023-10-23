@@ -191,11 +191,22 @@ body{
 
 
 /* side-bar */
-
+.close-button{
+    background: none;
+    /* border: none; */
+    font-size: 20px;
+    font-weight: 900;
+   /*  height: 2rem;
+    width: 2rem; */
+  /*   align-items: center;
+    justify-content: center; */
+    margin: 1rem 0 0 1rem;
+    display: none;
+}
 
 .logo {
     text-align: center;
-    margin: 1rem 0 8rem 0;
+    margin: 2rem 0 4rem 0;
 }
 
 .icons {
@@ -506,7 +517,7 @@ body{
         /* display: none; */
         /* z-index: 50; */
         top: 0;
-        left: 55px;
+        left: 0px;
         box-shadow: var(--shadow);
         /* box-shadow: 14px 14px 16px 0px rgba(0, 0, 0, 0.25); */
         height: auto;
@@ -527,7 +538,7 @@ body{
         border: none;
         margin: 0rem 0 0 0.3rem;
         position: sticky;
-
+        
     }
     .content{
         box-shadow: none;
@@ -604,5 +615,15 @@ body{
     }
     #DownArrow-username{
         display: none;
+    }
+    .close-button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 33px;
+        width: 31px;
+        border-radius: 50%;
+        border: 3px #292929 solid;
+
     }
 }
