@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="/CSS/Employees.css">
+</head>
+
+<body>
+
+
+
+    <section class="container">
+        <div class="sidebar">
+
+
+            <div class="logo">
+                <a href="Dashboard.html">
+                    <img src="/Images/icons/Logo.png" alt="">
+                </a>
+            </div>
+            <div class="icons">
+                <div class="dashboard">
+                    <a href="Dashboard.html">
+                        <img src="/Images/icons/Dashboard-icon.png" alt="" height="35px">
+                        <p>Dashboard</p>
+                    </a>
+                </div>
+
+                <div class="Leads">
+                    <a href="">
+                        <img src="/Images/icons/Leads-icon.png" alt="" height="35px">
+                        <p>Leads</p>
+                    </a>
+                </div>
+                <div class="Tasks">
+                    <a href="">
+                        <img src="/Images/icons/Tasks-icon.png" alt="" height="35px">
+                        <p>Tasks</p>
+                    </a>
+                </div>
+                <div class="guide">
+                    <a href="">
+                        <img src="/Images/icons/Guide-icon.png" alt="" height="35px">
+                        <p>Guide</p>
+                    </a>
+                </div>
+                <div class="logout-support">
+                    <div class="logout">
+                        <a href="Login.html">
+                            <img src="/Images/icons/Logout-icon.png" alt="" height="27px">
+                            <p>Logout</p>
+                        </a>
+                    </div>
+                    <div class="support">
+                        <a href="Support.html">
+                            <img src="/Images/icons/Support-icon.png" alt="">
+                            <p>Support</p>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <!-- sidebar -->
+
+
+        <div class="content">
+            <div class="header-box">
+                <div class="search-container">
+                    <button type="submit">
+                        <img src="/Images/icons/Search-icon.png" alt="Search">
+                    </button>
+                    <input type="text" placeholder="Search...">
+                </div>
+                <div class="LanguageAndAccountContainer">
+                    <div class="language-dropdown">
+                        <img class="FlagContainer" src="/Images/icons/britainFlag.png" alt="" height="30px">
+                        <select id="language-select">
+                            <option value="en">EN</option>
+                            <option value="AR">AR</option>
+                        </select>
+                    </div>
+                    <div class="notification">
+                        <button id="NotificationButton"><img src="/Images/icons/Notification-icon.png" alt=""
+                                height="35px"></button>
+                        <div class="notificationContiner">
+                            <div class="notifications">
+                                <div class="notification1">
+                                    <span>Notification #1</span>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and </p>
+                                </div>
+                                <div class="notification2">
+                                    <span>Notification #2</span>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and Lorem Ipsum is simply dummy
+                                        text of the printing andLorem Ipsum is simply dummy text of the printing
+                                        andLorem Ipsum is simply dummy text of the printing andLorem Ipsum is simply
+                                        dummy text of the printing and </p>
+
+                                </div>
+                                <div class="notification3">
+                                    <span>Notification #3</span>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="account-dropdown">
+                        <img src="/Images/icons/User-Icon.png" alt="Profile Picture">
+                        <span id="username">John Deo </span>
+                        <img src="/Images/icons/DownArrow.png" alt="" height="15px">
+                        <div class="account-menu">
+                            <ul>
+                                <li><a href="#">Profile</a></li>
+                                <li><a href="#">Settings</a></li>
+                                <li><a href="#">Logout</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="newestLeads">
+                <div class="table-container">
+                    <div class="widgetHeader">
+                        <h3>Employee Table</h3>
+
+                        <div class="search">
+                            <input type="text" id="searchInput" placeholder="Search...">
+                        </div>
+
+                    </div>
+
+                    <div class="DataTable">
+
+                        <table id="studentTable">
+                            <thead>
+                                <tr>
+                                    <th onclick="sortTable(0, 'text')" data-sort-type="text" data-sort-direction="asc">
+                                        Employee Name
+                                        <img class="sort" src="/Images/icons/DownArrow.png" alt="" height="8px">
+                                    </th>
+                                    <th onclick="sortTable(1, 'text')" data-sort-type="text" data-sort-direction="asc">
+                                        Position
+                                        <img class="sort" src="/Images/icons/DownArrow.png" alt="" height="8px">
+                                    </th>
+                                    <th onclick="sortTable(2, 'text')" data-sort-type="text" data-sort-direction="asc">
+                                        State
+                                        <img class="sort" src="/Images/icons/DownArrow.png" alt="" height="8px">
+                                    </th>
+
+                                    <th class="center">Tasks</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            <tbody>
+                                <tr>
+                                    <td class="td-name">Dwayne Johnson</td>
+                                    <td>Call Center</td>
+                                    <td class=" center state Online">
+                                        <div>Online</div>
+                                    </td>
+                                    <td class="center">
+                                        <div class="div-container">
+                                            <div class="task_container">
+                                                <p>24</p>
+                                                <img src="/Images/icons/Tasks-icon.png" alt="" height="30px">
+                                                <a href=""> <img src="/Images/icons/Add-icon-with-circle.png" alt=""
+                                                        height="30px"></a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="td-name">Dwayne Johnson</td>
+                                    <td>CEO</td>
+                                    <td class=" center state Online">
+                                        <div>Online</div>
+                                    </td>
+                                    <td class="center">
+                                        <div class="div-container">
+                                            <div class="task_container">
+                                                <p>24</p>
+                                                <img src="/Images/icons/Tasks-icon.png" alt="" height="30px">
+                                                <a href=""> <img src="/Images/icons/Add-icon-with-circle.png" alt=""
+                                                        height="30px"></a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="td-name">Ryan Reynolds</td>
+                                    <td>Call Center</td>
+                                    <td class=" center state Online">
+                                        <div>Online</div>
+                                    </td>
+                                    <td class="center">
+                                        <div class="div-container">
+                                            <div class="task_container">
+                                                <p>24</p>
+                                                <img src="/Images/icons/Tasks-icon.png" alt="" height="30px">
+                                                <a href=""> <img src="/Images/icons/Add-icon-with-circle.png" alt=""
+                                                        height="30px"></a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="td-name">Adele Adkins Adele Adkins Adele Adkins</td>
+                                    <td>Driver</td>
+                                    <td class="center state Online">
+                                        <div>Online</div>
+                                    </td>
+                                    <td class="center">
+                                        <div class="div-container">
+                                            <div class="task_container">
+                                                <p>24</p>
+                                                <img src="/Images/icons/Tasks-icon.png" alt="" height="30px">
+                                                <a href=""> <img src="/Images/icons/Add-icon-with-circle.png" alt=""
+                                                        height="30px"></a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="td-name">Ryan Reynolds</td>
+                                    <td>Call Center</td>
+                                    <td class=" center state Offline">
+                                        <div>Offline</div>
+                                    </td>
+                                    <td class="center">
+                                        <div class="div-container">
+                                            <div class="task_container">
+                                                <p>24</p>
+                                                <img src="/Images/icons/Tasks-icon.png" alt="" height="30px">
+                                                <a href=""> <img src="/Images/icons/Add-icon-with-circle.png" alt=""
+                                                        height="30px"></a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="td-name">Ryan Reynolds</td>
+                                    <td>Call Center</td>
+                                    <td class=" center state Offline">
+                                        <div>Offline</div>
+                                    </td>
+                                    <td class="center">
+                                        <div class="div-container">
+                                            <div class="task_container">
+                                                <p>24</p>
+                                                <img src="/Images/icons/Tasks-icon.png" alt="" height="30px">
+                                                <a href=""> <img src="/Images/icons/Add-icon-with-circle.png" alt=""
+                                                        height="30px"></a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="td-name">Ryan Reynolds</td>
+                                    <td>Call Center</td>
+                                    <td class=" center state Offline">
+                                        <div>Offline</div>
+                                    </td>
+                                    <td class="center">
+                                        <div class="div-container">
+                                            <div class="task_container">
+                                                <p>24</p>
+                                                <img src="/Images/icons/Tasks-icon.png" alt="" height="30px">
+                                                <a href=""> <img src="/Images/icons/Add-icon-with-circle.png" alt=""
+                                                        height="30px"></a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="td-name">Ryan Reynolds</td>
+                                    <td>Call Center</td>
+                                    <td class=" center state Offline">
+                                        <div>Offline</div>
+                                    </td>
+                                    <td class="center">
+                                        <div class="div-container">
+                                            <div class="task_container">
+                                                <p>24</p>
+                                                <img src="/Images/icons/Tasks-icon.png" alt="" height="30px">
+                                                <a href=""> <img src="/Images/icons/Add-icon-with-circle.png" alt=""
+                                                        height="30px"></a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="td-name">Ryan Reynolds</td>
+                                    <td>Call Center</td>
+                                    <td class=" center state Offline">
+                                        <div>Offline</div>
+                                    </td>
+                                    <td class="center">
+                                        <div class="div-container">
+                                            <div class="task_container">
+                                                <p>24</p>
+                                                <img src="/Images/icons/Tasks-icon.png" alt="" height="30px">
+                                                <a href=""> <img src="/Images/icons/Add-icon-with-circle.png" alt=""
+                                                        height="30px"></a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="td-name">Ryan Reynolds</td>
+                                    <td>Call Center</td>
+                                    <td class=" center state Offline">
+                                        <div>Offline</div>
+                                    </td>
+                                    <td class="center">
+                                        <div class="div-container">
+                                            <div class="task_container">
+                                                <p>24</p>
+                                                <img src="/Images/icons/Tasks-icon.png" alt="" height="30px">
+                                                <a href=""> <img src="/Images/icons/Add-icon-with-circle.png" alt=""
+                                                        height="30px"></a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="td-name">Ryan Reynolds</td>
+                                    <td>Call Center</td>
+                                    <td class=" center state Offline">
+                                        <div>Offline</div>
+                                    </td>
+                                    <td class="center">
+                                        <div class="div-container">
+                                            <div class="task_container">
+                                                <p>24</p>
+                                                <img src="/Images/icons/Tasks-icon.png" alt="" height="30px">
+                                                <a href=""> <img src="/Images/icons/Add-icon-with-circle.png" alt=""
+                                                        height="30px"></a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="td-name">Ryan Reynolds</td>
+                                    <td>Call Center</td>
+                                    <td class=" center state Offline">
+                                        <div>Offline</div>
+                                    </td>
+                                    <td class="center">
+                                        <div class="div-container">
+                                            <div class="task_container">
+                                                <p>24</p>
+                                                <img src="/Images/icons/Tasks-icon.png" alt="" height="30px">
+                                                <a href=""> <img src="/Images/icons/Add-icon-with-circle.png" alt=""
+                                                        height="30px"></a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="td-name">Ryan Reynolds</td>
+                                    <td>Call Center</td>
+                                    <td class=" center state Offline">
+                                        <div>Offline</div>
+                                    </td>
+                                    <td class="center">
+                                        <div class="div-container">
+                                            <div class="task_container">
+                                                <p>24</p>
+                                                <img src="/Images/icons/Tasks-icon.png" alt="" height="30px">
+                                                <a href=""> <img src="/Images/icons/Add-icon-with-circle.png" alt=""
+                                                        height="30px"></a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="td-name">Ryan Reynolds</td>
+                                    <td>Call Center</td>
+                                    <td class=" center state Offline">
+                                        <div>Offline</div>
+                                    </td>
+                                    <td class="center">
+                                        <div class="div-container">
+                                            <div class="task_container">
+                                                <p>24</p>
+                                                <img src="/Images/icons/Tasks-icon.png" alt="" height="30px">
+                                                <a href=""> <img src="/Images/icons/Add-icon-with-circle.png" alt=""
+                                                        height="30px"></a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="td-name">Ryan Reynolds</td>
+                                    <td>Call Center</td>
+                                    <td class=" center state Offline">
+                                        <div>Offline</div>
+                                    </td>
+                                    <td class="center">
+                                        <div class="div-container">
+                                            <div class="task_container">
+                                                <p>24</p>
+                                                <img src="/Images/icons/Tasks-icon.png" alt="" height="30px">
+                                                <a href=""> <img src="/Images/icons/Add-icon-with-circle.png" alt=""
+                                                        height="30px"></a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="td-name">Ryan Reynolds</td>
+                                    <td>Call Center</td>
+                                    <td class=" center state Offline">
+                                        <div>Offline</div>
+                                    </td>
+                                    <td class="center">
+                                        <div class="div-container">
+                                            <div class="task_container">
+                                                <p>24</p>
+                                                <img src="/Images/icons/Tasks-icon.png" alt="" height="30px">
+                                                <a href=""> <img src="/Images/icons/Add-icon-with-circle.png" alt=""
+                                                        height="30px"></a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="td-name">Ryan Reynolds</td>
+                                    <td>Call Center</td>
+                                    <td class=" center state Offline">
+                                        <div>Offline</div>
+                                    </td>
+                                    <td class="center">
+                                        <div class="div-container">
+                                            <div class="task_container">
+                                                <p>24</p>
+                                                <img src="/Images/icons/Tasks-icon.png" alt="" height="30px">
+                                                <a href=""> <img src="/Images/icons/Add-icon-with-circle.png" alt=""
+                                                        height="30px"></a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="td-name">Adele Adkins Adele Adkins Adele Adkins</td>
+                                    <td>Driver</td>
+                                    <td class="center state Online">
+                                        <div>Online</div>
+                                    </td>
+                                    <td class="center">
+                                        <div class="div-container">
+                                            <div class="task_container">
+                                                <p>24</p>
+                                                <img src="/Images/icons/Tasks-icon.png" alt="" height="30px">
+                                                <a href=""> <img src="/Images/icons/Add-icon-with-circle.png" alt=""
+                                                        height="30px"></a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="td-name">Adele Adkins Adele Adkins Adele Adkins</td>
+                                    <td>Driver</td>
+                                    <td class="center state Online">
+                                        <div>Online</div>
+                                    </td>
+                                    <td class="center">
+                                        <div class="div-container">
+                                            <div class="task_container">
+                                                <p>24</p>
+                                                <img src="/Images/icons/Tasks-icon.png" alt="" height="30px">
+                                                <a href=""> <img src="/Images/icons/Add-icon-with-circle.png" alt=""
+                                                        height="30px"></a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="td-name">Adele Adkins Adele Adkins Adele Adkins</td>
+                                    <td>Driver</td>
+                                    <td class="center state Online">
+                                        <div>Online</div>
+                                    </td>
+                                    <td class="center">
+                                        <div class="div-container">
+                                            <div class="task_container">
+                                                <p>24</p>
+                                                <img src="/Images/icons/Tasks-icon.png" alt="" height="30px">
+                                                <a href=""> <img src="/Images/icons/Add-icon-with-circle.png" alt=""
+                                                        height="30px"></a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="td-name">Adele Adkins Adele Adkins Adele Adkins</td>
+                                    <td>Driver</td>
+                                    <td class="center state Online">
+                                        <div>Online</div>
+                                    </td>
+                                    <td class="center">
+                                        <div class="div-container">
+                                            <div class="task_container">
+                                                <p>24</p>
+                                                <img src="/Images/icons/Tasks-icon.png" alt="" height="30px">
+                                                <a href=""> <img src="/Images/icons/Add-icon-with-circle.png" alt=""
+                                                        height="30px"></a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="td-name">Adele Adkins Adele Adkins Adele Adkins</td>
+                                    <td>Driver</td>
+                                    <td class="center state Online">
+                                        <div>Online</div>
+                                    </td>
+                                    <td class="center">
+                                        <div class="div-container">
+                                            <div class="task_container">
+                                                <p>24</p>
+                                                <img src="/Images/icons/Tasks-icon.png" alt="" height="30px">
+                                                <a href=""> <img src="/Images/icons/Add-icon-with-circle.png" alt=""
+                                                        height="30px"></a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="td-name">Adele Adkins Adele Adkins Adele Adkins</td>
+                                    <td>Driver</td>
+                                    <td class="center state Online">
+                                        <div>Online</div>
+                                    </td>
+                                    <td class="center">
+                                        <div class="div-container">
+                                            <div class="task_container">
+                                                <p>24</p>
+                                                <img src="/Images/icons/Tasks-icon.png" alt="" height="30px">
+                                                <a href=""> <img src="/Images/icons/Add-icon-with-circle.png" alt=""
+                                                        height="30px"></a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="td-name">Adele Adkins Adele Adkins Adele Adkins</td>
+                                    <td>Driver</td>
+                                    <td class="center state Online">
+                                        <div>Online</div>
+                                    </td>
+                                    <td class="center">
+                                        <div class="div-container">
+                                            <div class="task_container">
+                                                <p>24</p>
+                                                <img src="/Images/icons/Tasks-icon.png" alt="" height="30px">
+                                                <a href=""> <img src="/Images/icons/Add-icon-with-circle.png" alt=""
+                                                        height="30px"></a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="/JS/common.js"></script>
+    <script src="/JS/Employees.js"></script>
+
+</body>
+
+</html>

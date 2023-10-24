@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/CSS/style.css">
-    <link rel="stylesheet" href="/CSS/addNew-Employee.css">
+    <link rel="stylesheet" href="/CSS/create-Lead.css">
 </head>
 
 <body>
@@ -182,48 +182,139 @@
             </div>
 
             <!--         add the content here  -->
-            <div class="add-employee-container">
-                <h2>Add New Employee</h2>
-                <form action="" method="POST">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-
-                    <label for="phoneNumber">Phone Number:</label>
-                    <input type="tel" id="phoneNumber" name="phoneNumber" required>
-
-                    <label for="dob">Date of Birth:</label>
-                    <input type="date" id="dob" name="dob" required>
-
-                    <label for="role">role:</label>
-                    <select id="role" name="role" required>
-                        <option value="role1">role 1</option>
-                        <option value="role2">role 2</option>
-                        <option value="role3">role 3</option>
-                    </select>
-
-                    <label for="password">Password:</label>
-                    <div class="input-container">
-                        <input type="password" id="password" name="password" required>
-                        <button id="copyPassword" class="copy-button" onclick="copyToClipboard('#p2')"><img src="/Images/icons/copy-icon.png" alt="" height="30px"></button>
+            <div class="popup">
+                <div class="popup-content">
+                    <span class="close-button">X</span>
+                    <p id="new-lead-p">New Lead</p>
+                    <div class="lead-type-container">
+                        <div class="lead-type-buttons-container">
+                            <div class="lead-type-buttons">
+                                <input type="radio" id="radio-1" name="tabs" checked />
+                                <label class="tab-Public tab" for="radio-1">Public</label>
+                                <input type="radio" id="radio-2" name="tabs" />
+                                <label class="tab-Private tab" for="radio-2">Private</label>
+                                <input type="radio" id="radio-3" name="tabs" />
+                                <label class="tab tab-car" for="radio-3">Car Rental</label>
+                                <span class="glider show-hover"></span>
+                            </div>
+                        </div>
                     </div>
+                    <div class="choose-type-div">
+                        <p id="choose-type">choose trip type</p>
+                    </div>
+                    <div class="public-trip-inputs-container">
+                        <form action="#">
+                            <label for="name">public-trip-:</label>
+                            <input type="text" id="name" name="name"><br>
 
-                    <label for="confirmPassword">Confirm Password:</label>
-                    <input type="password" id="confirmPassword" name="confirmPassword" required>
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email"><br>
 
-                    <button id="submit-button" type="submit">Register</button>
-                </form>
+                            <label for="password">Password:</label>
+                            <input type="password" id="password" name="password"><br>
+
+                            <label for="age">Age:</label>
+                            <input type="number" id="age" name="age"><br>
+
+                            <label for="gender">Gender:</label>
+                            <input type="radio" id="male" name="gender" value="male">
+                            <label for="male">Male</label>
+                            <input type="radio" id="female" name="gender" value="female">
+                            <label for="female">Female</label>
+                            <input type="radio" id="other" name="gender" value="other">
+                            <label for="other">Other</label><br>
+
+                            <label for="country">Country:</label>
+                            <select id="country" name="country">
+                                <option value="usa">USA</option>
+                                <option value="canada">Canada</option>
+                                <option value="uk">UK</option>
+                                <option value="australia">Australia</option>
+                            </select><br>
+
+                            <label for="comments">Comments:</label>
+                            <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br>
+
+                            <label for="subscribe">Subscribe to newsletter:</label>
+                            <input type="checkbox" id="subscribe" name="subscribe" value="yes"><br>
+                        </form>
+                    </div>
+                    <div class="private-trip-inputs-container">
+                        <form>
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+                            
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                            
+                            <label for="phone">Phone Number:</label>
+                            <input type="tel" id="phone" name="phone" required>
+                            
+                            <label for="booking-dep">BookingDep User:</label>
+                            <select id="booking-dep" name="booking-dep" required>
+                              <option value="user1">User 1</option>
+                              <option value="user2">User 2</option>
+                              <!-- Add more options as needed -->
+                            </select>
+                            
+                            <label for="driver">Driver:</label>
+                            <select id="driver" name="driver" required>
+                              <option value="driver1">Driver 1</option>
+                              <option value="driver2">Driver 2</option>
+                              <!-- Add more options as needed -->
+                            </select>
+                            
+                            <label for="note">Note:</label>
+                            <textarea id="note" name="note" rows="4"></textarea>
+                            
+                            <button type="submit">Submit</button>
+                          </form>
+                          
+                    </div>
+                    <div class="car-rentel-inputs-container">
+
+                        <label for="name">Car rentel :</label>
+                        <input type="text" id="name" name="name"><br>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email"><br>
+
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password"><br>
+
+                        <label for="age">Age:</label>
+                        <input type="number" id="age" name="age"><br>
+
+                        <label for="gender">Gender:</label>
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+                        <input type="radio" id="other" name="gender" value="other">
+                        <label for="other">Other</label><br>
+
+                        <label for="country">Country:</label>
+                        <select id="country" name="country">
+                            <option value="usa">USA</option>
+                            <option value="canada">Canada</option>
+                            <option value="uk">UK</option>
+                            <option value="australia">Australia</option>
+                        </select><br>
+
+                        <label for="comments">Comments:</label>
+                        <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br>
+
+                        <label for="subscribe">Subscribe to newsletter:</label>
+                        <input type="checkbox" id="subscribe" name="subscribe" value="yes"><br>
+                    </div>
+                </div>
             </div>
-
-        </div>
         </div>
 
     </section>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="/JS/common.js"></script>
-    <script src="/JS/addNew-Employee.js"></script>
+    <script src="/JS/create-Lead.js"></script>
 
 </body>
 

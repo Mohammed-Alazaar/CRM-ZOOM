@@ -1,188 +1,65 @@
-/* table */
-.back {
-    width: 150px;
-    height: 50px;
-    background-color: #ffd504;
-    top: 80px;
-    left: 340px;
+.add-employee-container {
+    background: #ffffff;
+    margin: 0 2rem;
+    padding: 2rem;
     border-radius: 27px;
-}
-
-.back h4 {
-    color: white;
-    top: 15px;
-    left: 30px;
-    font-family: inter;
-    font-size: larger;
-
-}
-
-.table-container {
-    background-color: white;
-    box-shadow: var(--shadow);
-    border-radius: 27px;
-    margin: 2rem 0 0 0;
-    padding: 1rem;
-}
-
-.DataTable {
-    width: 100%;
-    background-color: #fff;
     overflow-y: auto;
-    height: 70vh;
+    max-height: 80%;
+    box-shadow: var(--shadow);
 }
 
-table {
-    width: 100%;
-    border-collapse: collapse;
-    background-color: #fff;
-    top: 100px;
-}
-
-thead {
-    background-color: #F5F5F5;
-}
-
-.center {}
-
-th,
-td {
-    padding: 18px !important;
-    text-align: left;
-    border-bottom: 1px solid #e5e5e5 !important;
-}
-
-th {
-    cursor: pointer;
-    width: 100px !important;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-td {
-    max-width: 100px !important;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.sort {
-    margin-left: 5px;
-}
-
-.table-container h3 {
-    font-family: inter;
-    font-style: normal;
-    font-size: 25px;
-    color: #585858;
-    top: 40px;
-    left: 65px;
-
-}
-
-#searchInput {
-    border-radius: 5px;
-    padding: .5rem;
-    /* border: darkgray; */
-}
-
-.rotateImage img {
-    transition: transform 0.5s;
-}
-
-.rotate {
-    transform: rotate(-180deg);
-}
-
-.Online div {
-    color: #AE9100;
-    background-color: #FFF8D4 !important;
-    width: fit-content;
-}
-
-.Offline div {
-    color: #a00b0b;
-    background-color: #f8ebeb !important;
-    width: fit-content;
-
-}
-
-.state div {
-    padding: 0.3rem 0.6rem;
-    border-radius: 19px;
+.add-employee-container h2 {
+    text-align: center;
+    font-size: 24px;
     font-weight: 500;
-
 }
 
-#back-left {
-    background: transparent;
+.add-employee-container label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="password"],
+select {
+    width: 95%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 17px;
+}
+
+#submit-button {
+    color: #fff;
+    background-color: #C4942F;
+    padding: 0.7rem 4rem;
+    border-radius: 27px;
     border: none;
-    color: transparent;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    margin: 1rem 0 0 0;
 }
 
-.widgetHeader {
+
+.photo-container {
+    height: 565px;
+}
+
+.photo-container img {
+    height: 100%;
+}
+.input-container {
     display: flex;
-    justify-content: space-between;
-    margin: 1rem 0 1rem 0;
+    width: 95%;
+    margin-top: 5px;
 }
 
-.newestLeads {
-    margin: 0 2rem 0 2rem;
-}
-
-.task_container {
-    display: flex;
-    width: 10rem;
-    align-items: center;
-    justify-content: flex-end;
-}
-
-.div-container {
-    /* display: flex; */
-    margin: 0 4rem 0 0;
-}
-
-.task_container p,
-.task_container a {
-    margin: 0 2rem 0 2rem;
-}
-
-/* table */
-@media screen and (max-width: 900px) {
-    .header-box {
-        display: none;
-    }
-
-    td {
-        max-width: 1000px !important;
-    }
-    .td-name{
-        max-width: 100px !important;
-    }
-    .DataTable {
-        overflow-x: auto;
-
-    }
-    .content{
-        width: 100%;
-    }
-    .newestLeads {
-        width: 85%;
-    }
-}
-
-@media screen and (max-width: 1100px) and (min-width: 901px) {
-    .header-box {
-        width: auto;
-    }
-    .content{
-        width: 100%;
-    }
-  
-    .DataTable {
-        overflow-x: auto;
-
-    }
- 
+.copy-button {
+    background: none;
+    border: none;
 }

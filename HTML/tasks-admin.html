@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/CSS/style.css">
-    <link rel="stylesheet" href="/CSS/addNew-Employee.css">
+    <link rel="stylesheet" href="/CSS/tasks-admin.css">
 </head>
 
 <body>
@@ -182,48 +182,30 @@
             </div>
 
             <!--         add the content here  -->
-            <div class="add-employee-container">
-                <h2>Add New Employee</h2>
-                <form action="" method="POST">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
 
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-
-                    <label for="phoneNumber">Phone Number:</label>
-                    <input type="tel" id="phoneNumber" name="phoneNumber" required>
-
-                    <label for="dob">Date of Birth:</label>
-                    <input type="date" id="dob" name="dob" required>
-
-                    <label for="role">role:</label>
-                    <select id="role" name="role" required>
-                        <option value="role1">role 1</option>
-                        <option value="role2">role 2</option>
-                        <option value="role3">role 3</option>
+            <div class="tasks-form-container">
+                <form>
+                    <label for="taskSubject">Task Subject:</label>
+                    <input type="text" id="taskSubject" name="taskSubject" required>
+                    
+                    <label for="selectUser">Select User:</label>
+                    <select id="selectUser" name="selectUser">
+                        <option value="user1">User 1</option>
+                        <option value="user2">User 2</option>
+                        <option value="user3">User asddddddddddddd3</option>
                     </select>
-
-                    <label for="password">Password:</label>
-                    <div class="input-container">
-                        <input type="password" id="password" name="password" required>
-                        <button id="copyPassword" class="copy-button" onclick="copyToClipboard('#p2')"><img src="/Images/icons/copy-icon.png" alt="" height="30px"></button>
-                    </div>
-
-                    <label for="confirmPassword">Confirm Password:</label>
-                    <input type="password" id="confirmPassword" name="confirmPassword" required>
-
-                    <button id="submit-button" type="submit">Register</button>
+                    
+                    <label for="taskText">Task Description:</label>
+                    <textarea id="taskText" name="taskText" rows="4" required></textarea>
+                    
+                    <input type="submit" value="Submit Task">
                 </form>
             </div>
-
-        </div>
         </div>
 
     </section>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="/JS/common.js"></script>
-    <script src="/JS/addNew-Employee.js"></script>
 
 </body>
 

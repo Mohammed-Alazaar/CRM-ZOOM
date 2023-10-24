@@ -1,0 +1,188 @@
+.lead-type-buttons-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0rem;
+}
+
+.lead-type-buttons {
+    display: flex;
+    position: relative;
+    background-color: #fff;
+    box-shadow: var(--shadow);
+    padding: 0.75rem;
+    border-radius: 99px;
+}
+
+.lead-type-buttons * {
+    z-index: 2;
+}
+
+input[type=radio] {
+    display: none;
+}
+
+.tab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 37px;
+    width: 200px;
+    font-size: 1.25rem;
+    font-weight: 500;
+    border-radius: 99px;
+    cursor: pointer;
+    transition: color 0.15s ease-in;
+}
+
+input[type=radio]:checked+label {
+    color: #292929;
+}
+
+
+
+input[id=radio-1]:checked~.glider {
+    transform: translateX(0);
+}
+
+input[id=radio-2]:checked~.glider {
+    transform: translateX(100%);
+}
+
+input[id=radio-3]:checked~.glider {
+    transform: translateX(200%);
+}
+
+.glider {
+    position: absolute;
+    display: flex;
+    height: 37px;
+    width: 200px;
+    background-color: #cd95446e;
+    z-index: 1;
+    border-radius: 99px;
+    transition: 0.25s ease-out;
+}
+
+
+
+
+
+
+
+#new-lead-p {
+    margin: 0 3rem;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+#choose-type {
+    margin: 9rem;
+    font-size: 51px;
+    font-weight: 500;
+}
+
+.choose-type-div {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* Style the trip-inputs-container */
+
+  
+  /* Style for form elements */
+  .private-trip-inputs-container form input[type="text"],
+  .private-trip-inputs-container form input[type="email"],
+  .private-trip-inputs-container form input[type="tel"],
+  .private-trip-inputs-container form select,
+  .private-trip-inputs-container form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0px 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .private-trip-inputs-container form select {
+    height: 40px; /* Adjust the height as needed */
+  }
+  
+  .private-trip-inputs-container form button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .private-trip-inputs-container form button:hover {
+    background-color: #0056b3;
+  }
+
+
+  .public-trip-inputs-container,
+  .private-trip-inputs-container,
+  .car-rentel-inputs-container {
+      overflow-y: scroll;
+      padding: 20px;
+      max-height: 23rem;
+      border-radius: 5px;
+      margin: 10px;
+      min-height: 10rem;
+      background-color: #ffffff;
+    }
+    
+    /* 
+.public-trip-inputs-container form ,
+.private-trip-inputs-container form,
+.car-rentel-inputs-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.public-trip-inputs-container label,
+.private-trip-inputs-container label, 
+.car-rentel-inputs-container label {
+font-weight: bold;
+    margin-top: 10px;
+}
+
+.public-trip-inputs-container input[type="text"],
+.public-trip-inputs-container input[type="email"],
+.public-trip-inputs-container input[type="password"],
+.public-trip-inputs-container input[type="number"],
+.public-trip-inputs-container textarea,
+.public-trip-inputs-container select {
+    width: 100%;
+    padding: 5px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.public-trip-inputs-container input[type="radio"],
+.public-trip-inputs-container input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.public-trip-inputs-container label[for="subscribe"] {
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.public-trip-inputs-container input[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.public-trip-inputs-container select {
+    height: 30px;
+} */

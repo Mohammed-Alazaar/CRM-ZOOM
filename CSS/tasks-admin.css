@@ -1,0 +1,45 @@
+.tasks-form-container{
+
+    margin: 2rem;
+    background-color: #ffffff;
+    padding: 1rem 2rem;
+    border-radius: 27px;
+}
+
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input[type="text"],
+textarea{
+    width: 80%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+select {
+    width: auto;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Style the submit button */
+input[type="submit"] {
+    background-color: #C4942F;
+    margin: 10px 0 0 0 ;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+}
+
+input[type="submit"]:hover {
+    background-color: #C4942F;
+}
