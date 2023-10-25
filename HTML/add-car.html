@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/CSS/style.css">
-    <link rel="stylesheet" href="/CSS/addNew-Employee.css">
+    <link rel="stylesheet" href="/CSS/add-car.css">
 </head>
 
 <body>
@@ -182,54 +182,85 @@
             </div>
 
             <!--         add the content here  -->
+
             <div class="back-button-container">
-                <a href="/HTML/Employees.html" class="back-Button">← back</a>
+                <a href="/HTML/Car-Management.html" class="back-Button">← back</a>
             </div>
-            <div class="add-employee-container">
-                <h2>Add New Employee</h2>
+
+            <div class="add-car-container">
+                <h2>Add New Car</h2>
                 <form action="" method="POST">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
+                    <label for="carModle">Car brand</label>
+                    <input type="text" id="Carbrand" name="Carbrand" required>
 
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
+                    <label for="Model">Model:</label>
+                    <input type="text" id="Model" name="Model" required>
 
-                    <label for="phoneNumber">Phone Number:</label>
-                    <input type="tel" id="phoneNumber" name="phoneNumber" required>
+                    <label for="Modelyear">Model year</label>
+                    <input type="number" id="Modelyear" name="Modelyear" required>
 
-                    <label for="dob">Date of Birth:</label>
-                    <input type="date" id="dob" name="dob" required>
-
-                    <label for="role">role:</label>
-                    <select id="role" name="role" required>
+                    <label for="TypeOfTransmission">Type of transmission</label>
+                    <select id="TypeOfTransmission" name="TypeOfTransmission" required>
                         <option value="role1">role 1</option>
                         <option value="role2">role 2</option>
                         <option value="role3">role 3</option>
                     </select>
 
-                    <label for="password">Password:</label>
-                    <div class="input-container">
-                        <input type="password" id="password" name="password" required>
-                        <div class="copy-button" onclick="copyToClipboard()">
-                          <img src="/Images/icons/copy-icon.png" alt="" height="30px">
-                          <p class="copyPasswordFeedback" id="copyPasswordFeedback"></p>
-                        </div>
-                      </div>
 
-                    <label for="confirmPassword">Confirm Password:</label>
-                    <input type="password" id="confirmPassword" name="confirmPassword" required>
+                    <label for="NumberOfSeats">Number of seats</label>
+                    <input type="number" id="NumberOfSeats" name="NumberOfSeats" required>
+
+                    <label for="TypeOfFuel">Type of fuel</label>
+                    <select id="TypeOfFuel" name="TypeOfFuel" required>
+                        <option value="role1">role 1</option>
+                        <option value="role2">role 2</option>
+                        <option value="role3">role 3</option>
+                    </select>
+
+                    <label for="SecurityDeposit">Security Deposit</label>
+                    <input type="number" id="SecurityDeposit" name="SecurityDeposit" required>
+
+                    <label for="ExcessClaim">Excess Claim</label>
+                    <input type="number" id="ExcessClaim" name="ExcessClaim" required>
+
+                    <label for="MileageCharge">Mileage Charge</label>
+                    <input type="number" id="MileageCharge" name="MileageCharge" required>
+
+                    <label for="MinimumEligibleAge">Minimum Eligible Age</label>
+                    <input type="number" id="MinimumEligibleAge" name="MinimumEligibleAge" required>
+
+                    <label for="InsuranceIncluded">Insurance Included</label>
+                    <select id="InsuranceIncluded" name="InsuranceIncluded" required>
+                        <option value="yes">yes</option>
+                        <option value="no">no</option>
+                    </select>
+
+                    <label for="DailyCharge">Daily Charge</label>
+                    <input type="number" id="DailyCharge" name="DailyCharge" required>
+
+                    <label for="weeklyCharge">weekly Charge</label>
+                    <input type="number" id="weeklyCharge" name="weeklyCharge" required>
+
+                    <label for="MonthlyCharge">Monthly Charge</label>
+                    <input type="number" id="MonthlyCharge" name="MonthlyCharge" required>
+
+
+                    <input type="file" id="add-photos" class="add-photos-input" multiple>
+                    <label for="add-photos" class="add-photos-label">Add Photos</label>
+                    <p class="file-name">No files selected</p>
+                    <div class="selected-photos"></div>
+                    <p class="max-reached"></p>
 
                     <button id="submit-button" type="submit">Register</button>
                 </form>
             </div>
 
         </div>
-        </div>
 
     </section>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="/JS/common.js"></script>
-    <script src="/JS/addNew-Employee.js"></script>
+    <script src="/JS/add-car.js"></script>
 
 </body>
 

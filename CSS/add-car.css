@@ -2,10 +2,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin:0 2rem 0 2rem ;
+    margin: 0 2rem 0 2rem;
 }
 
-.back-button-container a{
+.back-button-container a {
     color: #fff;
     background-color: #C4942F;
     padding: 0.7rem 2rem;
@@ -18,7 +18,9 @@
     align-items: center;
 }
 
-.add-employee-container {
+
+
+.add-car-container {
     background: #ffffff;
     margin: 0 2rem 2rem 2rem;
     padding: 2rem;
@@ -29,13 +31,13 @@
 }
 
 
-.add-employee-container h2 {
+.add-car-container h2 {
     text-align: center;
     font-size: 24px;
     font-weight: 500;
 }
 
-.add-employee-container label {
+.add-car-container label {
     display: block;
     margin-top: 10px;
     font-weight: bold;
@@ -43,7 +45,7 @@
 
 input[type="text"],
 input[type="email"],
-input[type="tel"],
+input[type="number"],
 input[type="date"],
 input[type="password"],
 select {
@@ -52,7 +54,6 @@ select {
     margin-top: 5px;
     border: 1px solid #ccc;
     border-radius: 17px;
-    
 }
 
 #submit-button {
@@ -67,53 +68,56 @@ select {
     margin: 1rem 0 0 0;
 }
 
-.input-container{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    width: 95%;
+
+
+
+
+
+
+
+/* Style for the input field */
+.add-photos-input {
+    display: none;
+    /* Hide the input initially */
 }
-.copy-button {
-    position: relative;
-    display: inline-block;
-  }
 
-  .tooltip {
-    visibility: hidden;
-    width: 120px;
-    background-color: #333;
-    color: #fff;
+.add-photos-label {
+    top: 150px;
+    font-family: calibri;
+    width: 150px;
+    padding: 10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border: 1px dashed #BBB;
     text-align: center;
-    border-radius: 5px;
+    background-color: #C4942F;
+    cursor: pointer;
+}
+
+.add-photos-label:hover {
+    background-color: #C4942F;
+}
+
+/* Style for the selected file name */
+.file-name {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* Style for displaying selected photos */
+.selected-photos {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.selected-photo {
+    margin: 5px;
+    border: 1px solid #ccc;
     padding: 5px;
-    position: absolute;
-    z-index: 1;
-    bottom: 125%; 
-    left: 50%;
-    transform: translateX(-50%);
-    opacity: 0;
-    transition: opacity 0.3s;
-  }
+}
 
-  .copy-button:hover .tooltip {
-    visibility: visible;
-    opacity: 1;
-  }
-
-  .copyPasswordFeedback {
-    visibility: hidden;
-    background-color: #29292985;
-    color: #fff;
-    text-align: center;
-    border-radius: 5px;
-    padding: 5px;
-    position: absolute;
-    z-index: 1;
-    top: -50px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  .copy-button:hover .copyPasswordFeedback {
-    visibility: visible;
-  }
+.selected-photo img {
+    max-width: 100px;
+    max-height: 100px;
+}
