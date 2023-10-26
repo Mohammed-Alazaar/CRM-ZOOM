@@ -1,0 +1,96 @@
+.reviews-container {
+    margin: 2rem;
+    background-color: #ffffff;
+    padding: 1rem 2rem;
+    border-radius: 27px;
+    overflow-y: auto;
+    max-height: 75%;
+}
+
+.review-1 {
+    margin: 1rem 0 1rem 0;
+    /* background: #fff8eb; */
+    padding: 1rem;
+    border-radius: 17px;
+    border: 2px #c8943b solid;
+}
+
+.review-1 h3 {
+    font-size: 24px;
+}
+
+.review-1 p {
+    line-height: 1.5;
+}
+
+/* #review-number{
+    font-size: 24px;
+    font-weight: bold;
+} */
+
+
+/* rating */
+
+.rate-area {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    float: left;
+    border-style: none;
+}
+
+.rate-area:not(:checked)>input {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+}
+
+.rate-area:not(:checked)>label {
+    float: right;
+    width: 1em;
+    padding: 0 .1em;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 2rem;
+    line-height: 1.2;
+    color: lightgrey;
+    text-shadow: 1px 1px #bbb;
+}
+
+.rate-area:not(:checked)>label:before {
+    content: '★ ';
+}
+
+.rate-area>input:checked~label {
+    color: gold;
+    text-shadow: 1px 1px #c60;
+    font-size: 2rem !important;
+}
+
+.rate-area:not(:checked)>label:hover,
+.rate-area:not(:checked)>label:hover~label {
+    color: gold;
+}
+
+.rate-area>input:checked+label:hover,
+.rate-area>input:checked+label:hover~label,
+.rate-area>input:checked~label:hover,
+.rate-area>input:checked~label:hover~label,
+.rate-area>label:hover~input:checked~label {
+    color: gold;
+    text-shadow: 1px 1px goldenrod;
+}
+
+.rate-area>label:active {
+    position: relative;
+    top: 2px;
+    left: 2px;
+}
+
+/* rating */
+
+.rating-name {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

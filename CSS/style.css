@@ -150,6 +150,8 @@ a {
 body{
     background-color: #fff8eb;  
     box-sizing: border-box;
+    overflow: hidden;
+
 }
 
 /* .mobilesidebar-headerbox{
