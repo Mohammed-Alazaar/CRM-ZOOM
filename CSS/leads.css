@@ -33,10 +33,11 @@
 
 /* Customize the scrollbar track */
 * {
-  box-sizing: border-box; /* Apply box-sizing to all elements */
+  box-sizing: border-box;
+  /* Apply box-sizing to all elements */
 }
 
-.content{
+.content {
   z-index: 1;
   gap: 1rem !important;
 }
@@ -47,9 +48,8 @@
   grid-template-columns: repeat(5, minmax(15rem, 40%));
   grid-gap: .5rem;
   margin: 0 2rem 0.5rem 2rem !important;
-  height: 100vh;
-  max-height: 70%;
-  min-height: 30%;
+  /* max-height: 70%; */
+  height: 27rem;
 }
 
 
@@ -131,8 +131,7 @@
 
 #create-lead-button {
   background-color: #c8943b;
-  padding: 1rem 2rem;
-  margin: 0 0 0 4rem;
+  padding: 1rem 1rem;
   border: none;
   outline: none;
   box-shadow: var(--shadow);
@@ -323,7 +322,7 @@ input[id=radio3]:checked~.glider2 {
 }
 
 
-.public-trip-inputs-container{
+.public-trip-inputs-container {
   overflow-y: scroll;
 }
 
@@ -331,7 +330,7 @@ input[id=radio3]:checked~.glider2 {
 /* Style the public-trip-inputs-container */
 .public-trip-inputs-container {
   padding: 20px;
- 
+
   border-radius: 5px;
   margin: 10px;
 }
@@ -389,22 +388,23 @@ input[id=radio3]:checked~.glider2 {
 
 
 @media screen and (max-width: 1101px) {
-  .leads-container{
+  .leads-container {
     overflow-x: auto;
   }
 
 }
+
 @media screen and (max-width: 700px) {
   .create-search-container {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     margin: 0 1rem;
-}
-#create-lead-button {
-  margin: 0;
-  padding: 0.4rem 2rem;
-  font-size: 15px;
-}
+  }
+
+  #create-lead-button {
+    margin: 0;
+    font-size: 15px;
+  }
 
 }

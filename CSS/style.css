@@ -562,7 +562,9 @@ body{
     .logout{
         margin-bottom: calc(8vh);
     }
-
+    body{
+        overflow: auto;
+    }
 }
 
 
