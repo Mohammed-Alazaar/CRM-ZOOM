@@ -205,16 +205,16 @@
                     <div class="public-trip-inputs-container">
                         <form action="#">
                             <label for="name">public-trip-:</label>
-                            <input type="text" id="name" name="name"><br>
+                            <input type="text" id="name" name="name">
 
                             <label for="email">Email:</label>
-                            <input type="email" id="email" name="email"><br>
+                            <input type="email" id="email" name="email">
 
                             <label for="password">Password:</label>
-                            <input type="password" id="password" name="password"><br>
+                            <input type="password" id="password" name="password">
 
                             <label for="age">Age:</label>
-                            <input type="number" id="age" name="age"><br>
+                            <input type="number" id="age" name="age">
 
                             <label for="gender">Gender:</label>
                             <input type="radio" id="male" name="gender" value="male">
@@ -222,7 +222,7 @@
                             <input type="radio" id="female" name="gender" value="female">
                             <label for="female">Female</label>
                             <input type="radio" id="other" name="gender" value="other">
-                            <label for="other">Other</label><br>
+                            <label for="other">Other</label> 
 
                             <label for="country">Country:</label>
                             <select id="country" name="country">
@@ -230,82 +230,192 @@
                                 <option value="canada">Canada</option>
                                 <option value="uk">UK</option>
                                 <option value="australia">Australia</option>
-                            </select><br>
+                            </select> 
 
                             <label for="comments">Comments:</label>
-                            <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br>
+                            <textarea id="comments" name="comments" rows="4" cols="50"></textarea> 
 
                             <label for="subscribe">Subscribe to newsletter:</label>
-                            <input type="checkbox" id="subscribe" name="subscribe" value="yes"><br>
+                            <input type="checkbox" id="subscribe" name="subscribe" value="yes"> 
                         </form>
                     </div>
                     <div class="private-trip-inputs-container">
                         <form>
-                            <label for="name">Name:</label>
-                            <input type="text" id="name" name="name" required>
+                            <label for="Name">Name</label>
+                            <input type="text" id="Name" name="Name">  
                             
-                            <label for="email">Email:</label>
-                            <input type="email" id="email" name="email" required>
+                            <button class="add-day-button"> add day</button>
                             
-                            <label for="phone">Phone Number:</label>
-                            <input type="tel" id="phone" name="phone" required>
+                            <div class="label-container">
+                                <label for="AddLeadDay">Add Lead Day</label>
+                                <input type="checkbox" id="AddLeadDay" name="AddLeadDay">  
+                            </div>
+                    
+                            <label for="NumberOfPeople">NumberOfPeople</label>
+                            <input type="number" id="NumberOfPeople" name="NumberOfPeople">  
+                            <div class="label-container">
+                                <label for="IsPaid">IsPaid</label>
+                                <input type="checkbox" id="IsPaid" name="IsPaid">  
+                            </div>
+                    
+                            <label for="Email">Email</label>
+                            <input type="email" id="Email" name="Email">  
+                    
+                            <label for="Phone">Phone</label>
+                            <input type="tel" id="Phone" name="Phone">  
+                    
+                            <label for="CreatedDate">CreatedDate</label>
+                            <input type="date" id="CreatedDate" name="CreatedDate">  
+                    
+                            <label for="Status">Status</label>
+                            <select id="Status" name="Status">
+                                <option value="New">New</option>
+                            </select>  
+                    
+                            <label for="Notes">Notes</label>
+                            <textarea id="Notes" name="Notes"></textarea>  
+                    
+                            <label for="CallCenterUser">Call Center User</label>
+                            <select id="CallCenterUser" name="CallCenterUser">
+                                <option value="SelectCallCenter">Select Call Center</option>
+                            </select>  
+                    
+                            <label for="BookingDepartmentUser">Booking Department User</label>
+                            <select id="BookingDepartmentUser" name="BookingDepartmentUser">
+                                <option value="SelectBookingDepartment">Select Booking Department</option>
+                            </select>  
+                    
+                            <label for="DriverUser">Driver User</label>
+                            <select id="DriverUser" name="DriverUser">
+                                <option value="Driver2">Select Driver</option>
+                                <option value="Driver1">Select Driver</option>
+                            </select>  
+                    
+                            <label for="Category">Category</label>
+                            <select id="Category" name="Category">
+                                <option value="SelectCar">Select Car</option>
+                            </select>  
                             
-                            <label for="booking-dep">BookingDep User:</label>
-                            <select id="booking-dep" name="booking-dep" required>
-                              <option value="user1">User 1</option>
-                              <option value="user2">User 2</option>
-                              <!-- Add more options as needed -->
-                            </select>
                             
-                            <label for="driver">Driver:</label>
-                            <select id="driver" name="driver" required>
-                              <option value="driver1">Driver 1</option>
-                              <option value="driver2">Driver 2</option>
-                              <!-- Add more options as needed -->
-                            </select>
+                            <label for="CarPickupDate">CarPickupDate</label>
+                            <input type="date" id="CarPickupDate" name="CarPickupDate">  
+                    
+                            <label for="CarReturnDate">CarReturnDate</label>
+                            <input type="date" id="CarReturnDate" name="CarReturnDate">  
+                    
+                            <label for="HotelCheckInDate">HotelCheckInDate</label>
+                            <input type="date" id="HotelCheckInDate" name="HotelCheckInDate">  
+                    
+                            <label for="HotelCheckOutDate">HotelCheckOutDate</label>
+                            <input type="date" id="HotelCheckOutDate" name="HotelCheckOutDate">  
+                    
+                            <label for="HotelName">HotelName</label>
+                            <input type="text" id="HotelName" name="HotelName">  
+                    
+                            <label for="HotelTotalCost">HotelTotalCost</label>
+                            <input type="number" id="HotelTotalCost" name="HotelTotalCost">  
+                    
+                            <label for="SaleAmount">SaleAmount</label>
+                            <input type="number" id="SaleAmount" name="SaleAmount">  
+                    
+                            <label for="LeadType">LeadType</label>
+                            <select id="LeadType" name="LeadType">
+                                <option value="LeadType">LeadType</option>
+                            </select>  
                             
-                            <label for="note">Note:</label>
-                            <textarea id="note" name="note" rows="4"></textarea>
-                            
-                            <button type="submit">Submit</button>
-                          </form>
+                            <button class="submit-button" type="submit">Creare a Lead</button>
+                        </form>
                           
                     </div>
                     <div class="car-rentel-inputs-container">
-
-                        <label for="name">Car rentel :</label>
-                        <input type="text" id="name" name="name"><br>
-
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email"><br>
-
-                        <label for="password">Password:</label>
-                        <input type="password" id="password" name="password"><br>
-
-                        <label for="age">Age:</label>
-                        <input type="number" id="age" name="age"><br>
-
-                        <label for="gender">Gender:</label>
-                        <input type="radio" id="male" name="gender" value="male">
-                        <label for="male">Male</label>
-                        <input type="radio" id="female" name="gender" value="female">
-                        <label for="female">Female</label>
-                        <input type="radio" id="other" name="gender" value="other">
-                        <label for="other">Other</label><br>
-
-                        <label for="country">Country:</label>
-                        <select id="country" name="country">
-                            <option value="usa">USA</option>
-                            <option value="canada">Canada</option>
-                            <option value="uk">UK</option>
-                            <option value="australia">Australia</option>
-                        </select><br>
-
-                        <label for="comments">Comments:</label>
-                        <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br>
-
-                        <label for="subscribe">Subscribe to newsletter:</label>
-                        <input type="checkbox" id="subscribe" name="subscribe" value="yes"><br>
+                        <form>
+                            <label for="Name">Name</label>
+                            <input type="text" id="Name" name="Name">  
+                    
+                            <label for="NumberOfDays">NumberOfDays</label>
+                            <input type="number" id="NumberOfDays" name="NumberOfDays">  
+                    
+                            <label for="Destinations">Destinations</label>
+                            <input type="text" id="Destinations" name="Destinations">  
+                            <div class="label-container">
+                                <label for="AddLeadDay">Add Lead Day</label>
+                                <input type="checkbox" id="AddLeadDay" name="AddLeadDay">  
+                            </div>
+                    
+                            <label for="NumberOfPeople">NumberOfPeople</label>
+                            <input type="number" id="NumberOfPeople" name="NumberOfPeople">  
+                            <div class="label-container">
+                                <label for="IsPaid">IsPaid</label>
+                                <input type="checkbox" id="IsPaid" name="IsPaid">  
+                            </div>
+                    
+                            <label for="Email">Email</label>
+                            <input type="email" id="Email" name="Email">  
+                    
+                            <label for="Phone">Phone</label>
+                            <input type="tel" id="Phone" name="Phone">  
+                    
+                            <label for="CreatedDate">CreatedDate</label>
+                            <input type="date" id="CreatedDate" name="CreatedDate">  
+                    
+                            <label for="Status">Status</label>
+                            <select id="Status" name="Status">
+                                <option value="New">New</option>
+                            </select>  
+                    
+                            <label for="Notes">Notes</label>
+                            <textarea id="Notes" name="Notes"></textarea>  
+                    
+                            <label for="CallCenterUser">Call Center User</label>
+                            <select id="CallCenterUser" name="CallCenterUser">
+                                <option value="SelectCallCenter">Select Call Center</option>
+                            </select>  
+                    
+                            <label for="BookingDepartmentUser">Booking Department User</label>
+                            <select id="BookingDepartmentUser" name="BookingDepartmentUser">
+                                <option value="SelectBookingDepartment">Select Booking Department</option>
+                            </select>  
+                    
+                            <label for="DriverUser">Driver User</label>
+                            <select id="DriverUser" name="DriverUser">
+                                <option value="Driver2">Select Driver</option>
+                                <option value="Driver1">Select Driver</option>
+                            </select>  
+                    
+                            <label for="Category">Category</label>
+                            <select id="Category" name="Category">
+                                <option value="SelectCar">Select Car</option>
+                            </select>  
+                            
+                            
+                            <label for="CarPickupDate">CarPickupDate</label>
+                            <input type="date" id="CarPickupDate" name="CarPickupDate">  
+                    
+                            <label for="CarReturnDate">CarReturnDate</label>
+                            <input type="date" id="CarReturnDate" name="CarReturnDate">  
+                    
+                            <label for="HotelCheckInDate">HotelCheckInDate</label>
+                            <input type="date" id="HotelCheckInDate" name="HotelCheckInDate">  
+                    
+                            <label for="HotelCheckOutDate">HotelCheckOutDate</label>
+                            <input type="date" id="HotelCheckOutDate" name="HotelCheckOutDate">  
+                    
+                            <label for="HotelName">HotelName</label>
+                            <input type="text" id="HotelName" name="HotelName">  
+                    
+                            <label for="HotelTotalCost">HotelTotalCost</label>
+                            <input type="number" id="HotelTotalCost" name="HotelTotalCost">  
+                    
+                            <label for="SaleAmount">SaleAmount</label>
+                            <input type="number" id="SaleAmount" name="SaleAmount">  
+                    
+                            <label for="LeadType">LeadType</label>
+                            <select id="LeadType" name="LeadType">
+                                <option value="LeadType">LeadType</option>
+                            </select>  
+                    
+                            <button class="submit-button" type="submit">Creare a Lead</button>
+                        </form>
                     </div>
                 </div>
             </div>

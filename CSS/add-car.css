@@ -41,6 +41,8 @@
     display: block;
     margin-top: 10px;
     font-weight: bold;
+    border-radius: 27px;
+
 }
 
 input[type="text"],
@@ -59,7 +61,7 @@ select {
 #submit-button {
     color: #fff;
     background-color: #C4942F;
-    padding: 0.7rem 2rem;
+    padding: 0.5rem 2rem;
     border-radius: 27px;
     border: none;
     font-size: 20px;
@@ -90,6 +92,8 @@ select {
     text-align: center;
     background-color: #C4942F;
     cursor: pointer;
+    color: #ffff;
+
 }
 
 .add-photos-label:hover {

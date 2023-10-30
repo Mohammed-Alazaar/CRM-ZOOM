@@ -91,98 +91,78 @@ input[id=radio-3]:checked~.glider {
 
 /* Style the trip-inputs-container */
 
-  
-  /* Style for form elements */
-  .private-trip-inputs-container form input[type="text"],
-  .private-trip-inputs-container form input[type="email"],
-  .private-trip-inputs-container form input[type="tel"],
-  .private-trip-inputs-container form select,
-  .private-trip-inputs-container form textarea {
-    width: 100%;
+
+
+/* Style for form elements */
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form input[type="number"],
+form input[type="date"],
+form select,
+form textarea {
+    width: 95%;
+    max-width: 95%;
     padding: 10px;
-    margin: 10px 0px 10px 0;
+    margin-top: 5px;
     border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  .private-trip-inputs-container form select {
-    height: 40px; /* Adjust the height as needed */
-  }
-  
-  .private-trip-inputs-container form button {
+    border-radius: 17px;
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    border-radius: 27px;
+}
+
+form select {
+    height: 40px;
+
+}
+
+form button {
     background-color: #007BFF;
     color: #fff;
     border: none;
     border-radius: 5px;
     padding: 10px 20px;
     cursor: pointer;
-  }
-  
-  .private-trip-inputs-container form button:hover {
-    background-color: #0056b3;
-  }
+}
 
-
-  .public-trip-inputs-container,
-  .private-trip-inputs-container,
-  .car-rentel-inputs-container {
-      overflow-y: scroll;
-      padding: 20px;
-      max-height: 23rem;
-      border-radius: 5px;
-      margin: 10px;
-      min-height: 10rem;
-      background-color: #ffffff;
-    }
-    
-    /* 
-.public-trip-inputs-container form ,
-.private-trip-inputs-container form,
-.car-rentel-inputs-container {
+.label-container {
     display: flex;
-    flex-direction: column;
+    margin: 1rem 1rem 1rem 0 !important;
 }
 
-.public-trip-inputs-container label,
-.private-trip-inputs-container label, 
-.car-rentel-inputs-container label {
-font-weight: bold;
-    margin-top: 10px;
+.label-container label {
+    margin: 0 1rem 0 0 !important;
+    font-weight: bold;
+    border-radius: 27px;
 }
 
-.public-trip-inputs-container input[type="text"],
-.public-trip-inputs-container input[type="email"],
-.public-trip-inputs-container input[type="password"],
-.public-trip-inputs-container input[type="number"],
-.public-trip-inputs-container textarea,
-.public-trip-inputs-container select {
-    width: 100%;
-    padding: 5px;
-    margin: 5px 0;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-}
-
-.public-trip-inputs-container input[type="radio"],
-.public-trip-inputs-container input[type="checkbox"] {
-    margin-right: 5px;
-}
-
-.public-trip-inputs-container label[for="subscribe"] {
-    display: inline-block;
-    margin-top: 5px;
-}
-
-.public-trip-inputs-container input[type="submit"] {
-    background-color: #007BFF;
+.submit-button {
     color: #fff;
+    background-color: #C4942F;
+    padding: 0.5rem 2rem;
+    border-radius: 27px;
     border: none;
-    border-radius: 5px;
-    padding: 10px;
+    font-size: 20px;
+    font-weight: 500;
     cursor: pointer;
-    margin-top: 10px;
+    margin: 1rem 0 0 0;
 }
 
-.public-trip-inputs-container select {
-    height: 30px;
-} */
+
+
+.public-trip-inputs-container,
+.private-trip-inputs-container,
+.car-rentel-inputs-container {
+    overflow-y: scroll;
+    padding: 20px;
+    max-height: 23rem;
+    border-radius: 5px;
+    margin: 10px;
+    min-height: 10rem;
+    background-color: #ffffff;
+}
