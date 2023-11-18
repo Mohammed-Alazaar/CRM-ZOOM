@@ -166,26 +166,14 @@
             <section class="Account-Content">
 
 
-                <ul class="nav nav-pills flex-column">
-                    <li class="nav-item"><a class="nav-link @ManageNavPages.IndexNavClass(ViewContext)"
-                            href="Account.html" id="selected profile" asp-page="./Index">Profile</a></li>
-                    <li class="nav-item"><a class="nav-link @ManageNavPages.EmailNavClass(ViewContext)"
-                            href="Email.html" id="email" asp-page="./Email">Email</a></li>
-                    <li class="nav-item"><a class="nav-link @ManageNavPages.ChangePasswordNavClass(ViewContext)"
-                            href="change-password.html" id="change-password" asp-page="./ChangePassword">Password</a>
-                    </li>
-                    <!-- @if (hasExternalLogins)
-                        {
-                            <li id="external-logins" class="nav-item"><a id="external-login" class="nav-link @ManageNavPages.ExternalLoginsNavClass(ViewContext)" asp-page="./ExternalLogins">External logins</a></li>
-                        } -->
-                    <li class="nav-item"><a class="nav-link @ManageNavPages.PersonalDataNavClass(ViewContext)"
-                            href="Personal-data.html" id="personal-data" asp-page="./PersonalData">Personal data</a>
-                    </li>
-                    <form id="logoutForm" class="form-inline" asp-area="Identity" asp-page="/Account/Logout"
-                        asp-route-returnUrl="@Url.Action(" Index", "Home" , new { area="" })">
-                        <button id="logout" type="submit" class="nav-link btn btn-link ">Logout</button>
-                    </form>
-                </ul>
+                <div class="Account-Links">
+                    <a href="Account.html">profile</a>
+                    <a href="Email.html">Email</a>
+                    <a href="change-password.html">Password</a>
+                    <a id="selected" href="Two-factor-authenticationd.html">Two-factor authenticationd</a>
+                    <a href="Personal-data.html">Personal data</a>
+                    <button id="logout" type="submit" class="nav-link btn btn-link ">Logout</button>
+                </div>
 
                 <div id="line"></div>
 

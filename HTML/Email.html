@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="/CSS/style.css">
     <link rel="stylesheet" href="/CSS/account.css">
+    <link rel="stylesheet" href="/CSS/Email.css">
 </head>
 
 <body>
@@ -168,8 +169,8 @@
 
                 <ul class="nav nav-pills flex-column">
                     <li class="nav-item"><a class="nav-link @ManageNavPages.IndexNavClass(ViewContext)"
-                            href="Account.html" id="selected profile" asp-page="./Index">Profile</a></li>
-                    <li class="nav-item"><a class="nav-link @ManageNavPages.EmailNavClass(ViewContext)"
+                            href="Account.html" id="profile" asp-page="./Index">Profile</a></li>
+                    <li class="nav-item"><a class="selected nav-link @ManageNavPages.EmailNavClass(ViewContext)"
                             href="Email.html" id="email" asp-page="./Email">Email</a></li>
                     <li class="nav-item"><a class="nav-link @ManageNavPages.ChangePasswordNavClass(ViewContext)"
                             href="change-password.html" id="change-password" asp-page="./ChangePassword">Password</a>
@@ -193,51 +194,45 @@
                 <div class="right-side-panel">
 
                     <div class="MyProfile">
-                        <h3>My Profile</h3>
+                        <h3>Email</h3>
 
                     </div>
-                    <div class="PersonalInforamtion">
-                        <div class="PersonalInforamtion-button">
-                            <p>Personal Information</p>
-                            <button class="edit-button">Edit <img src="/Images/icons/Edit.png" alt=""
-                                    width="20px"></button>
-                        </div>
-                        <form action="#">
-                            <div class="EmailAddress2">
-                                <span>Email Address 2</span>
-                                <p class="email">email@gmail.com</p>
-                            </div>
-                            <div class="PhoneNumber">
-                                <span>Phone Number</span>
-                                <p class="phone">+90 539 989 21 03</p>
-                                <div class="sendButton">
-                                    <button id="saveButton">save</button>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <form id="email-form" method="post">
+                                <div asp-validation-summary="All" class="text-danger"></div>
+                                <!-- @if (Model.IsEmailConfirmed)
+                                { -->
+                                <div class="form-floating input-group">
+                                    <input asp-for="Email" class="form-control" disabled />
+                                    <div class="input-group-append">
+                                        <span class="h-100 input-group-text text-success font-weight-bold">✓</span>
+                                    </div>
+                                    <label asp-for="Email" class="form-label"></label>
                                 </div>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="Adress">
-                        <div class="PersonalInforamtion-button">
-                            <p>Full Name</p>
-                            <button class="edit-button2">Edit <img src="/Images/icons/Edit.png" alt=""></button>
-                        </div>
-
-                        <div class="AddressDistrict">
-                            <form action="#">
-                                <div class="textboxAndPinDiv">
-                                    <span>first Name</span>
-                                    <p class="district">Mohammed</p>
+                                <!-- }
+                                else
+                                { -->
+                                <div class="form-floating">
+                                    <label asp-for="Email" class="form-label">Email</label>
+                                    <input asp-for="Email" class="form-control" disabled />
+                                    <button id="email-verification" type="submit"
+                                        asp-page-handler="SendVerificationEmail" class="btn btn-link">Send verification
+                                        email</button>
                                 </div>
-                                <div class="textboxAndPinDiv">
-                                    <span>Last Name</span>
-                                    <p class="city">Alazaar</p>
+                                <!-- } -->
+                                <div class="form-floating">
+                                    <input asp-for="Input.NewEmail" class="form-control" autocomplete="email"
+                                        aria-required="true" />
+                                    <label asp-for="Input.NewEmail" class="form-label"></label>
+                                    <span asp-validation-for="Input.NewEmail" class="text-danger"></span>
                                 </div>
-                                <div class="sendButton2">
-                                    <button id="saveButton2">Save</button>
-                                </div>
+                                <button id="change-email-button" type="submit" asp-page-handler="ChangeEmail"
+                                    class="w-100 btn btn-lg btn-primary">Change email</button>
                             </form>
                         </div>
                     </div>
+
                 </div>
             </section>
         </div>

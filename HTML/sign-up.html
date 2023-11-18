@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/CSS/sign-up.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
 </head>
 
 <body>
@@ -31,12 +33,25 @@
                 <label for="confirmPassword">Confirm Password:</label>
                 <input type="password" id="confirmPassword" name="confirmPassword" required>
 
+
+                </head>
+
+                    <input id="phone" type="tel" name="phone" />
+                <script>
+                    const phoneInputField = document.querySelector("#phone");
+                    const phoneInput = window.intlTelInput(phoneInputField, {
+                        utilsScript:
+                            "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+                    });
+                </script>
+
                 <button type="submit">Register</button>
+
             </form>
         </div>
 
         <div class="photo-container">
-            <img src="/Images/icons/log-in-packground.png" alt="" >
+            <img src="/Images/icons/log-in-packground.png" alt="">
         </div>
     </div>
 
