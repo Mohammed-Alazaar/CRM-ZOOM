@@ -25,8 +25,6 @@
     border-radius: 27px;
     margin: 2rem 0 0 0;
     padding: 1rem;
-    flex: 1;
-
 }
 
 .DataTable {
@@ -47,8 +45,6 @@ table {
 thead {
     background-color: #F5F5F5;
 }
-
-.center {}
 
 th,
 td {
@@ -89,7 +85,6 @@ td {
 #searchInput {
     border-radius: 5px;
     padding: .5rem;
-    width: 100%;
 }
 
 .rotateImage img {
@@ -98,19 +93,6 @@ td {
 
 .rotate {
     transform: rotate(-180deg);
-}
-
-.Online div {
-    color: #AE9100;
-    background-color: #FFF8D4 !important;
-    width: fit-content;
-}
-
-.Offline div {
-    color: #a00b0b;
-    background-color: #f8ebeb !important;
-    width: fit-content;
-
 }
 
 .state div {
@@ -134,8 +116,6 @@ td {
 
 .newestLeads {
     margin: 0 2rem 0 2rem;
-    display: flex;
-    flex-direction: column;
 }
 
 .task_container {
@@ -172,7 +152,7 @@ td {
         max-width: 1000px !important;
     }
 
-    .td-name {
+    .td-id {
         max-width: 100px !important;
     }
 
